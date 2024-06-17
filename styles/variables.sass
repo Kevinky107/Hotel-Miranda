@@ -2,6 +2,7 @@ $darkGray: rgba(51, 51, 51, 1)
 $darkerGray: rgba(41, 41, 41, 1)
 $lightGray: rgba(249, 249, 249, 1)
 $gray: rgba(189, 189, 189, 1)
+$grayText: rgba(119, 119, 119, 1)
 $black: rgba(34, 34, 34, 1)
 $mainColor: rgba(190, 173, 142, 1)
 $mainColorInDark: rgba(190, 173, 142, 1)
@@ -19,3 +20,9 @@ $mainColorInDark: rgba(190, 173, 142, 1)
     font-weight: 500
     font-size: 0.8rem
     letter-spacing: 0.3rem
+
+@mixin Text($theme: $grayText)
+    color: $grayText
+    font-family: "Archivo"
+    font-size: 0.85rem
+    line-height: 1.3rem
