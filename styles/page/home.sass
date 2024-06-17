@@ -1,6 +1,57 @@
 @import ../components/header
 @import ../components/button
 @import ../components/nav
+@import ../variables
 
-.header
+header
     padding-top: 9em
+
+.availability
+
+    &__form
+        background-color: $black
+        padding: 1.5em
+        padding-block: 3em
+        display: flex
+        flex-direction: column
+        gap: 2em
+        margin-bottom: 4em
+
+        div
+            display: flex
+            flex-direction: column
+            gap: 0.5em
+            color: white
+            font-family: "Roboto"
+            font-weight: 500
+            font-size: 0.9rem
+
+            input[type="date"]
+                position: relative
+                background-color: $black
+                border: none
+                padding-block: 1em
+                color: $mainColorInDark
+                border-bottom: 2px solid $mainColorInDark
+                padding-left: 2.5em
+            
+            input::-webkit-calendar-picker-indicator 
+                filter: invert(80%) sepia(21%) saturate(370%) hue-rotate(0deg) brightness(86%) contrast(84%)
+                font-size: 1rem
+                position: absolute
+                left: 0.1em
+
+        input[type="submit"]
+            margin-top: 1.5em
+            background-color: $mainColorInDark
+            color: white
+            font-family: "Archivo"
+            font-weight: 500
+            font-size: 0.8rem
+            letter-spacing: 0.2rem
+            border: none
+            display: block
+            width: 20em
+            height: 4.5em
+                
+
