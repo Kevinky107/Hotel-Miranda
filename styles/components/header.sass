@@ -1,0 +1,24 @@
+@import ../variables
+    
+.header
+    background-color: $darkGray
+    padding: 1.5em
+    padding-block: 5em
+
+    h4
+        @include Subtitles
+        margin-bottom: 2em
+
+    h1
+        @include Titles
+
+    button
+        background-color: $mainColorInDark
+        margin-top: 3em
+
+    button:last-child
+        background-color: rgba(0, 0, 0, 0)
+        border: 2px solid $gray
+        margin-top: 2em
+
+        
