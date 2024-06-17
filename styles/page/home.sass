@@ -75,7 +75,7 @@ header
         margin-bottom: 2.5em
 
         .group-img
-            width: 15em
+            width: 100%
             margin-top: -8em
             margin-inline: auto
             height: 20em
@@ -111,3 +111,36 @@ header
             width: 75%
             margin: auto
 
+
+    &__roomInfo
+        display: flex
+        flex-flow: column
+        margin: auto
+        width: fit-content
+        justify-content: center
+        max-width: 16em
+        padding-bottom: 2.5em
+        box-shadow: 0 5px 70px -70px rgb(0, 0, 0)
+        margin-bottom: 2.5em
+        background-color: $black
+
+        .room-img
+            padding: 0
+            width: 100%
+            height: 20em
+        
+        img
+            display: block
+            padding: 3em
+            padding-bottom: 2em
+            width: 3em
+            margin: auto
+
+        h3
+            @include SmallTitles(white)
+            padding-bottom: 0.7em
+
+        h4
+            @include Text2(white)
+            width: 75%
+            margin: auto

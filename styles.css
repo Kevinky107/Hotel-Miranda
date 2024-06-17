@@ -172,7 +172,7 @@ header {
   margin-bottom: 2.5em;
 }
 .about-us__teamInfo .group-img {
-  width: 15em;
+  width: 100%;
   margin-top: -8em;
   margin-inline: auto;
   height: 20em;
@@ -209,6 +209,46 @@ header {
 }
 .about-us__teamInfo h4 {
   color: rgb(34, 34, 34);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+  width: 75%;
+  margin: auto;
+}
+.about-us__roomInfo {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  width: fit-content;
+  justify-content: center;
+  max-width: 16em;
+  padding-bottom: 2.5em;
+  box-shadow: 0 5px 70px -70px rgb(0, 0, 0);
+  margin-bottom: 2.5em;
+  background-color: rgb(34, 34, 34);
+}
+.about-us__roomInfo .room-img {
+  padding: 0;
+  width: 100%;
+  height: 20em;
+}
+.about-us__roomInfo img {
+  display: block;
+  padding: 3em;
+  padding-bottom: 2em;
+  width: 3em;
+  margin: auto;
+}
+.about-us__roomInfo h3 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.9rem;
+  padding-bottom: 0.7em;
+}
+.about-us__roomInfo h4 {
+  color: white;
   font-family: "Archivo";
   font-size: 0.85rem;
   line-height: 1.3rem;
