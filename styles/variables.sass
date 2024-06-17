@@ -14,6 +14,12 @@ $mainColorInDark: rgba(190, 173, 142, 1)
     font-weight: 100
     font-size: 3rem
 
+@mixin SmallTitles($theme: black)
+    color: $theme
+    font-family: "Old Standard TT"
+    font-weight: 100
+    font-size: 1.9rem
+
 @mixin Subtitles($theme: white)
     color: $theme
     font-family: "Archivo"
@@ -22,7 +28,14 @@ $mainColorInDark: rgba(190, 173, 142, 1)
     letter-spacing: 0.3rem
 
 @mixin Text($theme: $grayText)
-    color: $grayText
+    color: $theme
     font-family: "Archivo"
     font-size: 0.85rem
     line-height: 1.3rem
+
+@mixin Text2($theme: $black)
+    color: $theme
+    font-family: "Archivo"
+    font-size: 0.85rem
+    line-height: 1.3rem
+    font-weight: 300

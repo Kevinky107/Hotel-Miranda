@@ -48,6 +48,7 @@ button {
   background-color: white;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 .navbar__left {
   display: inline-flex;
@@ -74,6 +75,7 @@ button {
 .card {
   padding: 1.5em;
   padding-block: 5em;
+  text-align: left;
 }
 .card h4 {
   color: rgb(119, 119, 119);
@@ -151,9 +153,68 @@ header {
   height: 4.5em;
 }
 
+.about-us {
+  text-align: center;
+}
 .about-us .card {
   background-color: rgb(249, 249, 249);
   padding-bottom: 12em;
+}
+.about-us__teamInfo {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  width: fit-content;
+  justify-content: center;
+  max-width: 16em;
+  padding-bottom: 2.5em;
+  box-shadow: 0 5px 70px -70px rgb(0, 0, 0);
+  margin-bottom: 2.5em;
+}
+.about-us__teamInfo .group-img {
+  width: 15em;
+  margin-top: -8em;
+  margin-inline: auto;
+  height: 20em;
+}
+.about-us__teamInfo picture {
+  position: relative;
+}
+.about-us__teamInfo picture img {
+  display: block;
+  padding: 3em;
+  padding-bottom: 2em;
+  width: 5em;
+  margin: auto;
+}
+.about-us__teamInfo picture .bImg {
+  filter: grayscale(100%);
+  padding: 0;
+  position: absolute;
+  opacity: 10%;
+  width: 8em;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding-left: 7em;
+  padding-top: 4em;
+}
+.about-us__teamInfo h3 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.9rem;
+  padding-bottom: 0.7em;
+}
+.about-us__teamInfo h4 {
+  color: rgb(34, 34, 34);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+  width: 75%;
+  margin: auto;
 }
 
 * {
