@@ -201,7 +201,7 @@ button {
   color: rgb(34, 34, 34);
   font-family: "Archivo";
   font-size: 0.85rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-weight: 300;
 }
 .picker div p {
@@ -220,6 +220,91 @@ button {
 }
 .picker picture img {
   padding-inline: 0.3em;
+}
+
+footer .footer-info {
+  padding-top: 2em;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5em;
+  padding-top: 4em;
+}
+footer .footer-info .background {
+  opacity: 0.01;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+footer .footer-info h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding-block: 2em;
+}
+footer .footer-info h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding-bottom: 1em;
+}
+footer .footer-info .list {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 10em auto;
+  padding-bottom: 1em;
+}
+footer .footer-info .list ul {
+  display: block;
+  padding-bottom: 1em;
+}
+footer .footer-info .list ul li {
+  font-family: "Roboto";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  list-style: none;
+  padding-block: 0.7em;
+  color: rgb(119, 119, 119);
+}
+footer .footer-info picture {
+  display: inline-flex;
+  height: 2em;
+  padding-block: 1em;
+  padding-inline-end: 1.5em;
+  gap: 1.2em;
+}
+footer .footer-info picture h4 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  padding: 0;
+  color: black;
+}
+footer .footer-info picture p {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  padding-inline: 1.5em;
+  padding-block: 0.5em;
+  gap: 0.5em;
+}
+footer .footer p {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 700;
 }
 
 .home header {
@@ -329,7 +414,7 @@ button {
   color: rgb(34, 34, 34);
   font-family: "Archivo";
   font-size: 0.85rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-weight: 300;
   width: 75%;
   margin: auto;
@@ -369,7 +454,7 @@ button {
   color: white;
   font-family: "Archivo";
   font-size: 0.85rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-weight: 300;
   width: 75%;
   margin: auto;
