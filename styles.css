@@ -102,6 +102,70 @@ button {
   margin-top: 2em;
 }
 
+.picker {
+  display: flexbox;
+  justify-items: center;
+  text-align: center;
+}
+.picker h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1em;
+}
+.picker h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+}
+.picker div {
+  display: flexbox;
+  justify-items: center;
+  width: 80%;
+  margin-inline: auto;
+  background-color: white;
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+.picker div h3 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.9rem;
+  margin-bottom: 0.5em;
+}
+.picker div h5 {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 1em;
+  color: rgb(34, 34, 34);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+}
+.picker div p {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+}
+.picker div p strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.picker picture {
+  background-color: white;
+  padding: 0.5em;
+}
+.picker picture img {
+  padding-inline: 0.3em;
+}
+
 header {
   padding-top: 9em;
 }

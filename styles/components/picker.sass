@@ -1,0 +1,46 @@
+@import ../variables
+
+.picker
+    display: flexbox
+    justify-items: center
+    text-align: center
+
+    h4
+        @include Subtitles($grayText)
+        margin-bottom: 1em
+
+    h1
+        @include Titles(black)
+        margin-bottom: 0.3em
+
+    div
+        display: flexbox
+        justify-items: center
+        width: 80%
+        margin-inline: auto
+        background-color: white
+        padding: 0.5em
+        padding-bottom: 1em
+
+        h3
+            @include SmallTitles
+            margin-bottom: 0.5em
+
+        h5
+            width: 80%
+            margin-inline: auto
+            margin-bottom: 1em
+            @include Text2
+
+        p
+            @include Night
+
+            strong
+                @include Price
+
+    picture
+        background-color: white
+        padding: 0.5em
+
+        img
+            padding-inline: 0.3em
