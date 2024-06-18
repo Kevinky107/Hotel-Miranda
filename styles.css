@@ -222,14 +222,14 @@ button {
   padding-inline: 0.3em;
 }
 
-footer {
+footer .footer-info {
   padding-top: 2em;
   overflow: hidden;
   position: relative;
   padding: 1.5em;
   padding-top: 4em;
 }
-footer .background {
+footer .footer-info .background {
   opacity: 0.01;
   position: absolute;
   left: 0;
@@ -237,7 +237,7 @@ footer .background {
   height: 100%;
   z-index: -1;
 }
-footer h4 {
+footer .footer-info h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
   font-size: 0.85rem;
@@ -245,23 +245,23 @@ footer h4 {
   font-weight: 300;
   padding-block: 2em;
 }
-footer h3 {
+footer .footer-info h3 {
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.4rem;
   padding-bottom: 1em;
 }
-footer .list {
+footer .footer-info .list {
   width: 100%;
   display: inline-grid;
   grid-template-columns: 10em auto;
   padding-bottom: 1em;
 }
-footer .list ul {
+footer .footer-info .list ul {
   display: block;
   padding-bottom: 1em;
 }
-footer .list ul li {
+footer .footer-info .list ul li {
   font-family: "Roboto";
   font-size: 0.85rem;
   line-height: 1.4rem;
@@ -270,13 +270,14 @@ footer .list ul li {
   padding-block: 0.7em;
   color: rgb(119, 119, 119);
 }
-footer picture {
+footer .footer-info picture {
   display: inline-flex;
   height: 2em;
   padding-block: 1em;
+  padding-inline-end: 1.5em;
   gap: 1.2em;
 }
-footer picture h4 {
+footer .footer-info picture h4 {
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.1rem;
@@ -284,12 +285,26 @@ footer picture h4 {
   padding: 0;
   color: black;
 }
-footer picture p {
+footer .footer-info picture p {
   font-family: "Roboto";
   font-size: 0.7rem;
   line-height: 1rem;
   font-weight: 300;
   color: rgb(119, 119, 119);
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  padding-inline: 1.5em;
+  padding-block: 0.5em;
+  gap: 0.5em;
+}
+footer .footer p {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 700;
 }
 
 .home header {

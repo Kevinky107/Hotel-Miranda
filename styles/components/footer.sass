@@ -1,67 +1,84 @@
 @import ../variables
-    
-footer
-    padding-top: 2em
-    overflow: hidden
-    position: relative
-    padding: 1.5em
-    padding-top: 4em
 
-    .background
-        opacity: 0.01
-        position: absolute
-        left: 0
-        top: 0
-        height: 100%
-        z-index: -1
+footer  
+    .footer-info
+        padding-top: 2em
+        overflow: hidden
+        position: relative
+        padding: 1.5em
+        padding-top: 4em
 
-    h4
-        @include Text2($grayText)
-        padding-block: 2em
-
-    h3
-        font-family: "Old Standard TT"
-        font-weight: 100
-        font-size: 1.4rem
-        padding-bottom: 1em
-
-    .list
-        width: 100%
-        display: inline-grid
-        grid-template-columns: 10em auto
-        padding-bottom: 1em
-
-
-        ul
-            display: block
-            padding-bottom: 1em
-            
-            li
-                font-family: "Roboto"
-                font-size: 0.85rem
-                line-height: 1.4rem
-                font-weight: 400
-                list-style: none
-                padding-block: 0.7em
-                color: $grayText
-
-    picture
-        display: inline-flex
-        height: 2em
-        padding-block: 1em
-        gap: 1.2em
+        .background
+            opacity: 0.01
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            z-index: -1
 
         h4
+            @include Text2($grayText)
+            padding-block: 2em
+
+        h3
             font-family: "Old Standard TT"
             font-weight: 100
-            font-size: 1.1rem
-            line-height: 1rem
-            padding: 0
-            color: black
-        
+            font-size: 1.4rem
+            padding-bottom: 1em
+
+        .list
+            width: 100%
+            display: inline-grid
+            grid-template-columns: 10em auto
+            padding-bottom: 1em
+
+
+            ul
+                display: block
+                padding-bottom: 1em
+                
+                li
+                    font-family: "Roboto"
+                    font-size: 0.85rem
+                    line-height: 1.4rem
+                    font-weight: 400
+                    list-style: none
+                    padding-block: 0.7em
+                    color: $grayText
+
+        picture
+            display: inline-flex
+            height: 2em
+            padding-block: 1em
+            padding-inline-end: 1.5em
+            gap: 1.2em
+
+            h4
+                font-family: "Old Standard TT"
+                font-weight: 100
+                font-size: 1.1rem
+                line-height: 1rem
+                padding: 0
+                color: black
+            
+            p
+                font-family: "Roboto"
+                font-size: 0.7rem
+                line-height: 1rem
+                font-weight: 300
+                color: $grayText
+
+    .footer
+        display: flex
+        flex-direction: column
+        background-color: $lightGray
+        padding-inline: 1.5em
+        padding-block: 0.5em
+        gap: 0.5em
+
         p
             font-family: "Roboto"
             font-size: 0.7rem
             line-height: 1rem
-            font-weight: 300
-            color: $grayText
+            font-weight: 700
+
