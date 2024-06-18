@@ -6,142 +6,147 @@
 @import ../components/card
 @import ../components/picker
 
-header
-    padding-top: 9em
 
-.availability
+.home
+    header
+        padding-top: 9em
 
-    &__form
-        background-color: $black
-        padding: 1.5em
-        padding-block: 3em
-        display: flex
-        flex-direction: column
-        gap: 2em
-        margin-bottom: 4em
+    .availability
 
-        div
+        &__form
+            background-color: $black
+            padding: 1.5em
+            padding-block: 3em
             display: flex
             flex-direction: column
-            gap: 0.5em
-            color: white
-            font-family: "Roboto"
-            font-weight: 500
-            font-size: 0.9rem
+            gap: 2em
+            margin-bottom: 4em
 
-            input[type="date"]
-                position: relative
-                background-color: $black
-                border: none
-                padding-block: 1em
-                color: $mainColorInDark
-                border-bottom: 2px solid $mainColorInDark
-                padding-left: 2.5em
-            
-            input::-webkit-calendar-picker-indicator 
-                filter: invert(80%) sepia(21%) saturate(370%) hue-rotate(0deg) brightness(86%) contrast(84%)
-                font-size: 1rem
-                position: absolute
-                left: 0.1em
+            div
+                display: flex
+                flex-direction: column
+                gap: 0.5em
+                color: white
+                font-family: "Roboto"
+                font-weight: 500
+                font-size: 0.9rem
 
-        input[type="submit"]
-            margin-top: 1.5em
-            background-color: $mainColorInDark
-            color: white
-            font-family: "Archivo"
-            font-weight: 500
-            font-size: 0.8rem
-            letter-spacing: 0.2rem
-            border: none
-            display: block
-            width: 20em
-            height: 4.5em
+                input[type="date"]
+                    position: relative
+                    background-color: $black
+                    border: none
+                    padding-block: 1em
+                    color: $mainColorInDark
+                    border-bottom: 2px solid $mainColorInDark
+                    padding-left: 2.5em
                 
-.about-us
-    text-align: center
-    
-    .card 
-        background-color: $lightGray
-        padding-bottom: 12em
+                input::-webkit-calendar-picker-indicator 
+                    filter: invert(80%) sepia(21%) saturate(370%) hue-rotate(0deg) brightness(86%) contrast(84%)
+                    font-size: 1rem
+                    position: absolute
+                    left: 0.1em
 
-    &__teamInfo
-        display: flex
-        flex-flow: column
-        margin: auto
-        width: fit-content
-        justify-content: center
-        max-width: 16em
-        padding-bottom: 2.5em
-        box-shadow: 0 5px 70px -70px rgb(0, 0, 0)
-        margin-bottom: 2.5em
+            input[type="submit"]
+                margin-top: 1.5em
+                background-color: $mainColorInDark
+                color: white
+                font-family: "Archivo"
+                font-weight: 500
+                font-size: 0.8rem
+                letter-spacing: 0.2rem
+                border: none
+                display: block
+                width: 20em
+                height: 4.5em
+                    
+    .about-us
+        text-align: center
+        
+        .card 
+            background-color: $lightGray
+            padding-bottom: 12em
 
-        .group-img
-            width: 100%
-            margin-top: -8em
-            margin-inline: auto
-            height: 20em
+        &__teamInfo
+            display: flex
+            flex-flow: column
+            margin: auto
+            width: fit-content
+            justify-content: center
+            max-width: 16em
+            padding-bottom: 2.5em
+            box-shadow: 0 5px 70px -70px rgb(0, 0, 0)
+            margin-bottom: 2.5em
 
-        picture
-            position: relative
+            .group-img
+                width: 100%
+                margin-top: -8em
+                margin-inline: auto
+                height: 20em
+
+            picture
+                position: relative
+                img
+                    display: block
+                    padding: 3em
+                    padding-bottom: 2em
+                    width: 5em
+                    margin: auto
+
+                .bImg
+                    filter: grayscale(100%)
+                    padding: 0
+                    position: absolute
+                    opacity: 10%
+                    width: 8em
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    top: 0
+                    padding-left: 7em
+                    padding-top: 4em
+
+            h3
+                @include SmallTitles
+                padding-bottom: 0.7em
+
+            h4
+                @include Text2($black)
+                width: 75%
+                margin: auto
+
+
+        &__roomInfo
+            display: flex
+            flex-flow: column
+            margin: auto
+            width: fit-content
+            justify-content: center
+            max-width: 16em
+            padding-bottom: 2.5em
+            box-shadow: 0 5px 70px -70px rgb(0, 0, 0)
+            margin-bottom: 2.5em
+            background-color: $black
+
+            .room-img
+                padding: 0
+                width: 100%
+                height: 20em
+            
             img
                 display: block
                 padding: 3em
                 padding-bottom: 2em
-                width: 5em
+                width: 3em
                 margin: auto
 
-            .bImg
-                filter: grayscale(100%)
-                padding: 0
-                position: absolute
-                opacity: 10%
-                width: 8em
-                bottom: 0
-                right: 0
-                left: 0
-                top: 0
-                padding-left: 7em
-                padding-top: 4em
+            h3
+                @include SmallTitles(white)
+                padding-bottom: 0.7em
 
-        h3
-            @include SmallTitles
-            padding-bottom: 0.7em
+            h4
+                @include Text2(white)
+                width: 75%
+                margin: auto
 
-        h4
-            @include Text2($black)
-            width: 75%
-            margin: auto
-
-
-    &__roomInfo
-        display: flex
-        flex-flow: column
-        margin: auto
-        width: fit-content
-        justify-content: center
-        max-width: 16em
-        padding-bottom: 2.5em
-        box-shadow: 0 5px 70px -70px rgb(0, 0, 0)
-        margin-bottom: 2.5em
-        background-color: $black
-
-        .room-img
-            padding: 0
-            width: 100%
-            height: 20em
-        
-        img
-            display: block
-            padding: 3em
-            padding-bottom: 2em
-            width: 3em
-            margin: auto
-
-        h3
-            @include SmallTitles(white)
-            padding-bottom: 0.7em
-
-        h4
-            @include Text2(white)
-            width: 75%
-            margin: auto
+    .picker
+        padding-bottom: 2em

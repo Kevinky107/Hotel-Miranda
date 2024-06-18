@@ -101,6 +101,62 @@ button {
 .card button {
   margin-top: 2em;
 }
+.card .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.card .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card--black {
+  padding: 1.5em;
+  padding-block: 3em;
+  text-align: left;
+  background: rgb(34, 34, 34);
+}
+.card--black h4 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+}
+.card--black h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.card--black p {
+  color: white;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+.card--black button {
+  margin-top: 2em;
+}
+.card--black .videoWrapper {
+  margin-top: 1.5em;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.card--black .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .picker {
   display: flexbox;
@@ -166,11 +222,10 @@ button {
   padding-inline: 0.3em;
 }
 
-header {
+.home header {
   padding-top: 9em;
 }
-
-.availability__form {
+.home .availability__form {
   background-color: rgb(34, 34, 34);
   padding: 1.5em;
   padding-block: 3em;
@@ -179,7 +234,7 @@ header {
   gap: 2em;
   margin-bottom: 4em;
 }
-.availability__form div {
+.home .availability__form div {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -188,7 +243,7 @@ header {
   font-weight: 500;
   font-size: 0.9rem;
 }
-.availability__form div input[type=date] {
+.home .availability__form div input[type=date] {
   position: relative;
   background-color: rgb(34, 34, 34);
   border: none;
@@ -197,13 +252,13 @@ header {
   border-bottom: 2px solid rgb(190, 173, 142);
   padding-left: 2.5em;
 }
-.availability__form div input::-webkit-calendar-picker-indicator {
+.home .availability__form div input::-webkit-calendar-picker-indicator {
   filter: invert(80%) sepia(21%) saturate(370%) hue-rotate(0deg) brightness(86%) contrast(84%);
   font-size: 1rem;
   position: absolute;
   left: 0.1em;
 }
-.availability__form input[type=submit] {
+.home .availability__form input[type=submit] {
   margin-top: 1.5em;
   background-color: rgb(190, 173, 142);
   color: white;
@@ -216,15 +271,14 @@ header {
   width: 20em;
   height: 4.5em;
 }
-
-.about-us {
+.home .about-us {
   text-align: center;
 }
-.about-us .card {
+.home .about-us .card {
   background-color: rgb(249, 249, 249);
   padding-bottom: 12em;
 }
-.about-us__teamInfo {
+.home .about-us__teamInfo {
   display: flex;
   flex-flow: column;
   margin: auto;
@@ -235,23 +289,23 @@ header {
   box-shadow: 0 5px 70px -70px rgb(0, 0, 0);
   margin-bottom: 2.5em;
 }
-.about-us__teamInfo .group-img {
+.home .about-us__teamInfo .group-img {
   width: 100%;
   margin-top: -8em;
   margin-inline: auto;
   height: 20em;
 }
-.about-us__teamInfo picture {
+.home .about-us__teamInfo picture {
   position: relative;
 }
-.about-us__teamInfo picture img {
+.home .about-us__teamInfo picture img {
   display: block;
   padding: 3em;
   padding-bottom: 2em;
   width: 5em;
   margin: auto;
 }
-.about-us__teamInfo picture .bImg {
+.home .about-us__teamInfo picture .bImg {
   filter: grayscale(100%);
   padding: 0;
   position: absolute;
@@ -264,14 +318,14 @@ header {
   padding-left: 7em;
   padding-top: 4em;
 }
-.about-us__teamInfo h3 {
+.home .about-us__teamInfo h3 {
   color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.9rem;
   padding-bottom: 0.7em;
 }
-.about-us__teamInfo h4 {
+.home .about-us__teamInfo h4 {
   color: rgb(34, 34, 34);
   font-family: "Archivo";
   font-size: 0.85rem;
@@ -280,7 +334,7 @@ header {
   width: 75%;
   margin: auto;
 }
-.about-us__roomInfo {
+.home .about-us__roomInfo {
   display: flex;
   flex-flow: column;
   margin: auto;
@@ -292,26 +346,26 @@ header {
   margin-bottom: 2.5em;
   background-color: rgb(34, 34, 34);
 }
-.about-us__roomInfo .room-img {
+.home .about-us__roomInfo .room-img {
   padding: 0;
   width: 100%;
   height: 20em;
 }
-.about-us__roomInfo img {
+.home .about-us__roomInfo img {
   display: block;
   padding: 3em;
   padding-bottom: 2em;
   width: 3em;
   margin: auto;
 }
-.about-us__roomInfo h3 {
+.home .about-us__roomInfo h3 {
   color: white;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.9rem;
   padding-bottom: 0.7em;
 }
-.about-us__roomInfo h4 {
+.home .about-us__roomInfo h4 {
   color: white;
   font-family: "Archivo";
   font-size: 0.85rem;
@@ -319,6 +373,9 @@ header {
   font-weight: 300;
   width: 75%;
   margin: auto;
+}
+.home .picker {
+  padding-bottom: 2em;
 }
 
 * {
