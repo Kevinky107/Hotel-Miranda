@@ -178,23 +178,85 @@ button {
   font-size: 3rem;
   margin-bottom: 0.3em;
 }
-.picker div {
-  display: flexbox;
-  justify-items: center;
-  width: 80%;
-  margin-inline: auto;
+.picker .swiper {
+  width: 100%;
+  height: 30em;
+  z-index: 0;
+  padding: 0;
+}
+.picker .swiper .swiper-button-next {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 35%);
+}
+.picker .swiper .swiper-button-next::after {
+  font-size: 0.5em;
+}
+.picker .swiper .swiper-button-prev {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 35%);
+}
+.picker .swiper .swiper-button-prev::after {
+  font-size: 0.5em;
+}
+.picker .swiper .swiper-button-disabled {
+  color: black;
+  background-color: white;
+  opacity: 1;
+}
+.picker .swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.picker .swiper .swiper-wrapper .swiper-slide {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.picker .swiper picture {
+  display: inline-flex;
   background-color: white;
   padding: 0.5em;
-  padding-bottom: 1em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1em;
+  width: fit-content;
+  margin: auto;
 }
-.picker div h3 {
+.picker .swiper picture img {
+  padding-inline: 0.5em;
+}
+.picker .swiper .slide-image {
+  width: 100%;
+  height: 267px;
+  margin-top: 2em;
+}
+.picker .swiper .slide-info {
+  display: flexbox;
+  width: 90%;
+  justify-items: center;
+  background-color: white;
+  padding: 0.5em;
+  position: absolute;
+  top: 17.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.picker .swiper .slide-info h3 {
   color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.9rem;
   margin-bottom: 0.5em;
 }
-.picker div h5 {
+.picker .swiper .slide-info h5 {
   width: 80%;
   margin-inline: auto;
   margin-bottom: 1em;
@@ -204,22 +266,15 @@ button {
   line-height: 1.4rem;
   font-weight: 300;
 }
-.picker div p {
+.picker .swiper .slide-info p {
   color: rgb(190, 173, 142);
   font-family: "Archivo";
   font-size: 0.7rem;
 }
-.picker div p strong {
+.picker .swiper .slide-info p strong {
   color: rgb(190, 173, 142);
   font-family: "Archivo";
   font-size: 1.4rem;
-}
-.picker picture {
-  background-color: white;
-  padding: 0.5em;
-}
-.picker picture img {
-  padding-inline: 0.3em;
 }
 
 footer .footer-info {

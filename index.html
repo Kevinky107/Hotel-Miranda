@@ -10,6 +10,10 @@
         <title>HOTEL MIRANDA</title>
         <link rel="icon" type="image/svg+xml" href="public/logo.svg" />
         <link rel="stylesheet" href="/styles.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
     </head>
     <boddy class="home">
         <nav class="navbar"> 
@@ -72,20 +76,70 @@
                 <article class="picker">
                     <h4>ROOMS</h4>
                     <h1>Hand Picked Rooms</h1>
-                    <picture>
-                        <img src="public/room/bed.svg">
-                        <img src="public/room/wifi.svg">
-                        <img src="public/room/car.svg">
-                        <img src="public/room/cold.svg">
-                        <img src="public/room/gym.svg">
-                        <img src="public/room/no-smoking.svg">
-                        <img src="public/room/bar.svg">
-                    </picture>
-                    <div>
-                        <h3>Minimal Duplex Room</h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h5>
-                        <p><strong>$345</strong>/Night</p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img src="public/room/bed.svg">
+                                    <img src="public/room/wifi.svg">
+                                    <img src="public/room/car.svg">
+                                    <img src="public/room/cold.svg">
+                                    <img src="public/room/gym.svg">
+                                    <img src="public/room/no-smoking.svg">
+                                    <img src="public/room/bar.svg">
+                                </picture>
+                                <img class="slide-image" src="public/swiper/room1.jpg">
+                                <div class="slide-info">
+                                    <h3>Minimal Duplex Room</h3>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h5>
+                                    <p><strong>$345</strong>/Night</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img src="public/room/bed.svg">
+                                    <img src="public/room/wifi.svg">
+                                    <img src="public/room/car.svg">
+                                    <img src="public/room/cold.svg">
+                                    <img src="public/room/no-smoking.svg">
+                                    <img src="public/room/bar.svg">
+                                </picture>
+                                <img class="slide-image" src="public/swiper/room2.jpg">
+                                <div class="slide-info">
+                                    <h3>One Bed Room</h3>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h5>
+                                    <p><strong>$245</strong>/Night</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img src="public/room/bed.svg">
+                                    <img src="public/room/wifi.svg">
+                                    <img src="public/room/cold.svg">
+                                    <img src="public/room/no-smoking.svg">
+                                </picture>
+                                <img class="slide-image" src="public/swiper/room3.jpg">
+                                <div class="slide-info">
+                                    <h3>Kids Room</h3>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h5>
+                                    <p><strong>$145</strong>/Night</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    <script>
+                        const swiper = new Swiper('.swiper', {
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            }
+                        });
+                    </script>
+
                 </article>
                 <article class="card--black">
                     <h4>INTRO VIDEO</h4>
