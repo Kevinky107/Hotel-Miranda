@@ -159,21 +159,75 @@
         overflow: hidden
         position: relative
 
-        img
+        &__donut
             width: 10em
             position: absolute
             right: -2em
 
-        h4
+        &__subtitle
             padding-top: 13em
             @include Subtitles($grayText)
 
-        h2
+        &__title
             padding-top: 0.5em
             @include Titles(black)
 
         &__slider
-            
+            padding-top: 0.2em
+
+            .swiper
+                height: fit-content
+                padding-bottom: 2em
+
+                .swiper-button-next
+                    width: 2.5em
+                    height: 2.5em
+                    background-color: $mainColor
+                    color: white
+                    top: 27em
+
+                .swiper-button-next::after
+                    font-size: 0.5em
+
+                .swiper-button-prev
+                    width: 2.5em
+                    height: 2.5em
+                    background-color: $mainColor
+                    color: white
+                    top: 27em
+                    left: auto !important
+                    right: 4em
+
+                .swiper-button-prev::after
+                    font-size: 0.5em
+
+                .swiper-button-disabled
+                    color: black
+                    background-color: $lightGray
+                    opacity: 1
+
+
+                .slide
+                    picture
+                        padding-block: 1em
+                        display: inline-flex
+                        align-items: center
+
+                    img
+                        width: 6.5em
+                        padding-right: 2em
+
+                    h4
+                        font-family: "Old Standard TT"
+                        font-weight: 100
+                        font-size: 1.4rem
+                        padding-bottom: 0.2em
+
+                    p
+                        font-family: "Roboto"
+                        font-size: 0.85rem
+                        line-height: 1.2rem
+                        font-weight: 400
 
     .numbers
         background-color: $black
