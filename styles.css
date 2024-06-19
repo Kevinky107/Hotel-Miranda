@@ -1368,6 +1368,7 @@ footer .footer p {
   min-width: 300px;
 }
 .about-us .facilities--dark {
+  margin-top: 4em;
   padding-block: 2em;
 }
 .about-us .facilities--dark .swiper {
