@@ -278,11 +278,10 @@ button {
 }
 
 footer .footer-info {
-  padding-top: 2em;
   overflow: hidden;
   position: relative;
   padding: 1.5em;
-  padding-top: 4em;
+  padding-top: 2em;
 }
 footer .footer-info .background {
   opacity: 0.01;
