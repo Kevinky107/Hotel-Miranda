@@ -127,6 +127,9 @@ button {
   padding-block: 5em;
   text-align: left;
 }
+.card img {
+  width: 100%;
+}
 .card h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
@@ -134,9 +137,10 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card h1 {
-  color: back;
+  color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 3rem;
@@ -158,6 +162,9 @@ button {
   text-align: left;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 }
+.card--shadow img {
+  width: 100%;
+}
 .card--shadow h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
@@ -165,22 +172,57 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card--shadow h1 {
-  color: back;
   font-family: "Old Standard TT";
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .card--shadow p {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
   font-size: 0.85rem;
   line-height: 1.3rem;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 .card--shadow button {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+.card--shadow2 {
+  padding: 1.5em;
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--shadow2 img {
+  width: 100%;
+}
+.card--shadow2 h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.card--shadow2 h1 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 2rem;
+}
+.card--shadow2 p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1.5em;
+}
+.card--shadow2 button {
+  margin-top: 1em;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
 }
 
 .card--black {
@@ -189,6 +231,9 @@ button {
   text-align: left;
   background: rgb(34, 34, 34);
 }
+.card--black img {
+  width: 100%;
+}
 .card--black h4 {
   color: rgb(190, 173, 142);
   font-family: "Archivo";
@@ -196,6 +241,7 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card--black h1 {
   color: white;
@@ -896,6 +942,9 @@ button {
   padding-block: 5em;
   text-align: left;
 }
+.card img {
+  width: 100%;
+}
 .card h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
@@ -903,9 +952,10 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card h1 {
-  color: back;
+  color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 3rem;
@@ -927,6 +977,9 @@ button {
   text-align: left;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 }
+.card--shadow img {
+  width: 100%;
+}
 .card--shadow h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
@@ -934,22 +987,57 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card--shadow h1 {
-  color: back;
   font-family: "Old Standard TT";
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .card--shadow p {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
   font-size: 0.85rem;
   line-height: 1.3rem;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 .card--shadow button {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+.card--shadow2 {
+  padding: 1.5em;
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--shadow2 img {
+  width: 100%;
+}
+.card--shadow2 h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.card--shadow2 h1 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 2rem;
+}
+.card--shadow2 p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1.5em;
+}
+.card--shadow2 button {
+  margin-top: 1em;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
 }
 
 .card--black {
@@ -958,6 +1046,9 @@ button {
   text-align: left;
   background: rgb(34, 34, 34);
 }
+.card--black img {
+  width: 100%;
+}
 .card--black h4 {
   color: rgb(190, 173, 142);
   font-family: "Archivo";
@@ -965,6 +1056,7 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2em;
+  padding-top: 2em;
 }
 .card--black h1 {
   color: white;
