@@ -240,6 +240,93 @@
                     </div>
                 </article>
             </section>
+            <section class="menu">
+                <img src="public/donut.svg"/>
+                <h4>MENU</h4>
+                <h2>Our Foods Menu</h2>
+                <article class="menu__slider">
+                    <div class="swiper swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img />
+                                    <div>
+                                        <h4>Eggs & Bacon</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Tea or Coffee</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Chia Oatmeal</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Fruit Parfait</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Marmelade Selection</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Cheese Plate</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Salads</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Avocado Toasts</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Assortment of Pastries</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Crepes</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Mediterranean Breakfast</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <img />
+                                    <div>
+                                        <h4>Fruit Smoothies</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-button-prev3"></div>
+                        <div class="swiper-button-next swiper-button-next3"></div>
+                    </div>
+                </article>
+                <article class="slider">
+                    <div class="swiper swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination4"></div>
+                    </div>
+                </article>
+            </section>
             <section class="numbers">
                 <picture>
                     <img src="public/rocket.svg"/>
@@ -326,9 +413,23 @@
                 }
             });
 
+            let swiperFood = new Swiper('.swiper3', {
+                navigation: {
+                    nextEl: '.swiper-button-next3',
+                    prevEl: '.swiper-button-prev3',
+                }
+            });
+
             let slider = new Swiper('.swiper2', {
                 pagination: {
                     el: '.swiper-pagination2',
+                    clickable: true
+                }
+            });
+
+            let sliderFood = new Swiper('.swiper4', {
+                pagination: {
+                    el: '.swiper-pagination4',
                     clickable: true
                 }
             });

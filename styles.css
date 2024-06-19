@@ -405,7 +405,7 @@ footer .footer p {
   font-size: 3rem;
 }
 .facilities .slide {
-  padding: 1.5em;
+  margin: 1.5em;
   text-align: left;
   position: relative;
 }
@@ -433,6 +433,12 @@ footer .footer p {
   line-height: 1.4rem;
   font-weight: 300;
   padding-bottom: 2em;
+}
+.facilities--dark {
+  background-color: rgb(41, 41, 41);
+}
+.facilities--dark .slide {
+  background-color: rgb(34, 34, 34);
 }
 
 .home header {
@@ -589,6 +595,31 @@ footer .footer p {
 }
 .home .picker {
   padding-bottom: 2em;
+}
+.home .menu {
+  padding: 1.5em;
+  overflow: hidden;
+  position: relative;
+}
+.home .menu img {
+  width: 10em;
+  position: absolute;
+  right: -2em;
+}
+.home .menu h4 {
+  padding-top: 13em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+.home .menu h2 {
+  padding-top: 0.5em;
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
 }
 .home .numbers {
   background-color: rgb(34, 34, 34);
