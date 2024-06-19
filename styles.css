@@ -305,6 +305,12 @@ footer .footer-info h3 {
   font-size: 1.4rem;
   padding-bottom: 1em;
 }
+footer .footer-info__social {
+  padding-bottom: 2em;
+}
+footer .footer-info__social img {
+  padding-right: 0.5em;
+}
 footer .footer-info .list {
   width: 100%;
   display: inline-grid;
