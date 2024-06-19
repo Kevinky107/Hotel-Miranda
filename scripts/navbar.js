@@ -10,9 +10,9 @@ logo.addEventListener("click", function(){
 menu.addEventListener("click", function(){
     if(dropdown.className == "nav-links") {
         dropdown.className = "nav-links--hide"
-        menu.src = "../public/menu.svg"
+        menu.src = "./public/menu.svg"
     } else {
         dropdown.className = "nav-links"
-        menu.src = "../public/cross.svg"
+        menu.src = "./public/cross.svg"
     }
 })
