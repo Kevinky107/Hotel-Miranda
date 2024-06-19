@@ -18,6 +18,28 @@
 
     button
         margin-top: 2em
+        
+
+.card--shadow
+    padding: 1.5em
+    margin: 1.5em
+    text-align: left
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1)
+
+    h4
+        @include Subtitles($grayText)
+        margin-bottom: 2em
+
+    h1
+        @include Titles(back)
+
+    p
+        @include Text()
+        padding-top: 1em
+
+    button
+        margin-top: 2em
+
 
 .card--black
     padding: 1.5em
@@ -38,16 +60,3 @@
 
     button
         margin-top: 2em
-
-    .videoWrapper 
-        margin-top: 1.5em
-        position: relative
-        padding-bottom: 56.25% 
-        height: 0
-    
-        iframe
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%

@@ -152,6 +152,37 @@ button {
   margin-top: 2em;
 }
 
+.card--shadow {
+  padding: 1.5em;
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--shadow h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+}
+.card--shadow h1 {
+  color: back;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.card--shadow p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+.card--shadow button {
+  margin-top: 2em;
+}
+
 .card--black {
   padding: 1.5em;
   padding-block: 3em;
@@ -181,19 +212,6 @@ button {
 }
 .card--black button {
   margin-top: 2em;
-}
-.card--black .videoWrapper {
-  margin-top: 1.5em;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.card--black .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .picker {
@@ -903,6 +921,37 @@ button {
   margin-top: 2em;
 }
 
+.card--shadow {
+  padding: 1.5em;
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--shadow h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+}
+.card--shadow h1 {
+  color: back;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.card--shadow p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+.card--shadow button {
+  margin-top: 2em;
+}
+
 .card--black {
   padding: 1.5em;
   padding-block: 3em;
@@ -932,19 +981,6 @@ button {
 }
 .card--black button {
   margin-top: 2em;
-}
-.card--black .videoWrapper {
-  margin-top: 1.5em;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.card--black .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 footer .footer-info {
