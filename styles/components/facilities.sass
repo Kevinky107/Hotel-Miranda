@@ -39,8 +39,46 @@
             @include Text2
             padding-bottom: 2em
 
-    &--dark 
-        background-color: $darkerGray
+.facilities--dark
+    padding-top: 2em
+    padding-bottom: 2em
+    width: 100%
+    text-align: center
+    background-color: $black
 
-        .slide
-            background-color: $black
+    h4
+        @include Subtitles(white)
+        padding-bottom: 1em
+
+    h1
+        @include Titles(white)
+
+    .slide
+        margin: 1em
+        padding: 1em
+        text-align: left
+        position: relative
+        background-color: $darkerGray
+    
+        h2
+            position: absolute
+            top: 0.1em
+            right: 0.3em
+            font-family: "Archivo"
+            font-size: 7em
+            color: $black
+
+        img
+            padding-top: 4em
+
+        h3
+            font-family: "Old Standard TT"
+            font-weight: 100
+            font-size: 1.6rem
+            padding-block: 0.8em
+            color: white
+
+        p
+            @include Text2(white)
+            padding-bottom: 2em
+            

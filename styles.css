@@ -259,6 +259,9 @@ button {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .videoWrapper {
+  margin-top: 1.5em;
+}
 
 .picker {
   display: flexbox;
@@ -541,11 +544,60 @@ footer .footer p {
   font-weight: 300;
   padding-bottom: 2em;
 }
+
 .facilities--dark {
-  background-color: rgb(41, 41, 41);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+}
+.facilities--dark h4 {
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1em;
+}
+.facilities--dark h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
 }
 .facilities--dark .slide {
-  background-color: rgb(34, 34, 34);
+  margin: 1em;
+  padding: 1em;
+  text-align: left;
+  position: relative;
+  background-color: rgb(41, 41, 41);
+}
+.facilities--dark .slide h2 {
+  position: absolute;
+  top: 0.1em;
+  right: 0.3em;
+  font-family: "Archivo";
+  font-size: 7em;
+  color: rgb(34, 34, 34);
+}
+.facilities--dark .slide img {
+  padding-top: 4em;
+}
+.facilities--dark .slide h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.6rem;
+  padding-block: 0.8em;
+  color: white;
+}
+.facilities--dark .slide p {
+  color: white;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 2em;
 }
 
 .home .availability__form {
@@ -1074,6 +1126,9 @@ button {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .videoWrapper {
+  margin-top: 1.5em;
+}
 
 footer .footer-info {
   overflow: hidden;
@@ -1237,17 +1292,68 @@ footer .footer p {
   font-weight: 300;
   padding-bottom: 2em;
 }
+
 .facilities--dark {
-  background-color: rgb(41, 41, 41);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+}
+.facilities--dark h4 {
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1em;
+}
+.facilities--dark h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
 }
 .facilities--dark .slide {
-  background-color: rgb(34, 34, 34);
+  margin: 1em;
+  padding: 1em;
+  text-align: left;
+  position: relative;
+  background-color: rgb(41, 41, 41);
+}
+.facilities--dark .slide h2 {
+  position: absolute;
+  top: 0.1em;
+  right: 0.3em;
+  font-family: "Archivo";
+  font-size: 7em;
+  color: rgb(34, 34, 34);
+}
+.facilities--dark .slide img {
+  padding-top: 4em;
+}
+.facilities--dark .slide h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.6rem;
+  padding-block: 0.8em;
+  color: white;
+}
+.facilities--dark .slide p {
+  color: white;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 2em;
 }
 
 .about-us .presentation {
   text-align: center;
-  padding: 1.5em;
   padding-top: 4em;
+}
+.about-us .presentation .videoContainer {
+  padding-inline: 1.5em;
 }
 .about-us .presentation h2 {
   padding-top: 1em;
@@ -1255,6 +1361,16 @@ footer .footer p {
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 1.7rem;
+  padding-bottom: 2em;
+  padding-inline: 1.5em;
+}
+.about-us .presentation .picture {
+  min-width: 300px;
+}
+.about-us .facilities--dark {
+  padding-block: 2em;
+}
+.about-us .facilities--dark .swiper {
   padding-bottom: 2em;
 }
 

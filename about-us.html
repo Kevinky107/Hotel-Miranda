@@ -21,7 +21,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="./scripts/navbar.js" defer></script>
     </head>
-    <boddy class="about-us">
+    <body class="about-us">
         <nav>
             <div class="navbar">
                 <div class="navbar__left">
@@ -54,21 +54,23 @@
         </header>
         <main>
             <section class="presentation">
-                <div class="videoWrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/Bu3Doe45lcU?si=esEmTrY6w55mUSOm&amp;start=25"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+                <div class="videoContainer">
+                    <div class="videoWrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/Bu3Doe45lcU?si=esEmTrY6w55mUSOm&amp;start=25"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
                 <h2>Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h2>
-                <picture>
+                <div class="picture">
                     <img src="public/Breakfast.svg">
                     <img src="public/Airport.svg">
                     <img src="public/Guide.svg">
                     <img src="public/Luxury.svg">
-                </picture>
+                </div>
             </section>
             <section>
                 <article class="card--shadow2">
@@ -77,6 +79,77 @@
                     <h1>Get Restaurant Facilities & Many Other More</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                     <button>TAKE A TOUR</button>
+                </article>
+            </section>
+            <section class="facilities--dark">
+                <h4>FACILITIES</h4>
+                <h1>Core Features</h1>
+                <article class="slider">
+                    <div class="swiper swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>01</h2>
+                                    <img src="public/rating.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>02</h2>
+                                    <img src="public/time.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>03</h2>
+                                    <img src="public/location.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>04</h2>
+                                    <img src="public/cancel.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>05</h2>
+                                    <img src="public/payment.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h2>06</h2>
+                                    <img src="public/offer.svg">
+                                    <h3>Have High Rating</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                    </div>
                 </article>
             </section>
         </main>
@@ -140,5 +213,14 @@
                 <p>Terms of use | Privacy Environmental Policy</p>
             </div>
         </footer>
-    </boddy>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            let slider = new Swiper('.swiper2', {
+                pagination: {
+                    el: '.swiper-pagination2',
+                    clickable: true
+                }
+            });
+        </script>
+    </body>
 </html>
