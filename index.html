@@ -19,19 +19,30 @@
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="./scripts/navbar.js" defer></script>
     </head>
     <boddy class="home">
-        <nav class="navbar">
-            <div class="navbar__left">
-                <img class="navbar__left__menu" src="public/menu.svg">
-                <div class="navbar__left__logo">
-                    <img src="public/logo.svg">
-                    <img src="public/logo-text.svg">
+        <nav>
+            <div class="navbar">
+                <div class="navbar__left">
+                    <img id="open" class="navbar__left__menu" src="public/menu.svg">
+                    <div id="logo" class="navbar__left__logo">
+                        <img src="public/logo.svg">
+                        <img src="public/logo-text.svg">
+                    </div>
+                </div>
+                <div class="navbar__right">
+                    <img src="public/profile.svg">
+                    <img src="public/search.svg">
                 </div>
             </div>
-            <div class="navbar__right">
-                <img src="public/profile.svg">
-                <img src="public/search.svg">
+            <div id="dropdown" class="nav-links--hide">
+                <ul>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./rooms.html">Rooms</a></li>
+                    <li><a href="./offers.html">Offers</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
             </div>
         </nav>
         <header>
