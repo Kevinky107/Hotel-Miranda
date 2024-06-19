@@ -3,6 +3,7 @@ header {
   padding: 1.5em;
   padding-block: 5em;
   padding-top: 9em;
+  position: relative;
 }
 header h4 {
   color: white;
@@ -26,6 +27,27 @@ header button:last-of-type {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgb(189, 189, 189);
   margin-top: 2em;
+}
+header .return {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  right: 1em;
+}
+header .return p {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  word-spacing: 0.5em;
+}
+header .return p a {
+  text-decoration: none;
+  color: black;
+}
+header .return p span {
+  color: rgb(190, 173, 142);
 }
 
 button {
@@ -744,6 +766,7 @@ header {
   padding: 1.5em;
   padding-block: 5em;
   padding-top: 9em;
+  position: relative;
 }
 header h4 {
   color: white;
@@ -767,6 +790,27 @@ header button:last-of-type {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgb(189, 189, 189);
   margin-top: 2em;
+}
+header .return {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  right: 1em;
+}
+header .return p {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  word-spacing: 0.5em;
+}
+header .return p a {
+  text-decoration: none;
+  color: black;
+}
+header .return p span {
+  color: rgb(190, 173, 142);
 }
 
 button {
