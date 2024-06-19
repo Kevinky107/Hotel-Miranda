@@ -364,7 +364,7 @@ footer .footer p {
 
 .slider .swiper {
   width: 100%;
-  height: 25em;
+  height: fit-content;
   z-index: 0;
   padding: 0;
 }
@@ -376,6 +376,56 @@ footer .footer p {
   margin: 0;
   padding: 0;
   position: relative;
+}
+.facilities {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  text-align: center;
+}
+.facilities h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1em;
+}
+.facilities h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.facilities .slide {
+  padding: 1.5em;
+  text-align: left;
+  position: relative;
+}
+.facilities .slide h2 {
+  position: absolute;
+  color: rgb(249, 249, 249);
+  top: 0.1em;
+  right: 0.3em;
+  font-family: "Archivo";
+  font-size: 7em;
+}
+.facilities .slide img {
+  padding-top: 4em;
+}
+.facilities .slide h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.6rem;
+  padding-block: 0.8em;
+}
+.facilities .slide p {
+  color: rgb(34, 34, 34);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 2em;
 }
 
 .home header {

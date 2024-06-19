@@ -1,0 +1,40 @@
+@import ../variables
+
+.facilities
+    padding-top: 2em
+    padding-bottom: 2em
+    width: 100%
+    text-align: center
+
+    h4
+        @include Subtitles($grayText)
+        padding-bottom: 1em
+
+    h1
+        @include Titles(black)
+
+    .slide
+        padding: 1.5em
+        text-align: left
+        position: relative
+    
+        h2
+            position: absolute
+            color: $lightGray
+            top: 0.1em
+            right: 0.3em
+            font-family: "Archivo"
+            font-size: 7em
+
+        img
+            padding-top: 4em
+
+        h3
+            font-family: "Old Standard TT"
+            font-weight: 100
+            font-size: 1.6rem
+            padding-block: 0.8em
+
+        p
+            @include Text2
+            padding-bottom: 2em
