@@ -14,7 +14,7 @@
         @include Titles(black)
 
     .slide
-        padding: 1.5em
+        margin: 1.5em
         text-align: left
         position: relative
     
@@ -38,3 +38,9 @@
         p
             @include Text2
             padding-bottom: 2em
+
+    &--dark 
+        background-color: $darkerGray
+
+        .slide
+            background-color: $black
