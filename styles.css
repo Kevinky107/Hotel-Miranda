@@ -2723,7 +2723,7 @@ footer .footer p {
   color: rgb(119, 119, 119);
 }
 .contact .map {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   padding-inline: 1.5em;
 }
 .contact .map .videoWrapper {
@@ -2737,6 +2737,11 @@ footer .footer p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.contact .form {
+  padding-block: 2em;
+  padding-bottom: 2em;
+  padding-inline: 1.5em;
 }
 
 * {
