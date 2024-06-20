@@ -493,11 +493,11 @@ footer .footer p {
 .slider .swiper .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
 }
-.slider--pagination {
+.slider--pagination .swiper {
   width: 100%;
   height: fit-content;
   z-index: 0;
-  padding: 0;
+  margin-bottom: 2em;
 }
 .slider--pagination .swiper-wrapper {
   margin: 0;
@@ -505,14 +505,25 @@ footer .footer p {
 }
 .slider--pagination .swiper-wrapper .swiper-slide {
   margin: 0;
-  padding: 0;
+  padding-bottom: 3em;
   position: relative;
 }
 .slider--pagination .swiper-pagination-bullet {
-  background-color: rgb(189, 189, 189);
+  border-radius: 0;
+  opacity: 1;
+  width: 2em;
+  height: 1.75em;
+  padding-top: 0.25em;
+  background-color: white;
+  color: black;
+  font-family: "Oswald";
 }
 .slider--pagination .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
+  color: white;
+}
+.slider--pagination .swiper-pagination-bullet span {
+  padding-bottom: 0.7em;
 }
 
 .facilities {
@@ -1262,11 +1273,11 @@ footer .footer p {
 .slider .swiper .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
 }
-.slider--pagination {
+.slider--pagination .swiper {
   width: 100%;
   height: fit-content;
   z-index: 0;
-  padding: 0;
+  margin-bottom: 2em;
 }
 .slider--pagination .swiper-wrapper {
   margin: 0;
@@ -1274,14 +1285,25 @@ footer .footer p {
 }
 .slider--pagination .swiper-wrapper .swiper-slide {
   margin: 0;
-  padding: 0;
+  padding-bottom: 3em;
   position: relative;
 }
 .slider--pagination .swiper-pagination-bullet {
-  background-color: rgb(189, 189, 189);
+  border-radius: 0;
+  opacity: 1;
+  width: 2em;
+  height: 1.75em;
+  padding-top: 0.25em;
+  background-color: white;
+  color: black;
+  font-family: "Oswald";
 }
 .slider--pagination .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
+  color: white;
+}
+.slider--pagination .swiper-pagination-bullet span {
+  padding-bottom: 0.7em;
 }
 
 .facilities {
@@ -1708,11 +1730,11 @@ footer .footer p {
 .slider .swiper .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
 }
-.slider--pagination {
+.slider--pagination .swiper {
   width: 100%;
   height: fit-content;
   z-index: 0;
-  padding: 0;
+  margin-bottom: 2em;
 }
 .slider--pagination .swiper-wrapper {
   margin: 0;
@@ -1720,14 +1742,25 @@ footer .footer p {
 }
 .slider--pagination .swiper-wrapper .swiper-slide {
   margin: 0;
-  padding: 0;
+  padding-bottom: 3em;
   position: relative;
 }
 .slider--pagination .swiper-pagination-bullet {
-  background-color: rgb(189, 189, 189);
+  border-radius: 0;
+  opacity: 1;
+  width: 2em;
+  height: 1.75em;
+  padding-top: 0.25em;
+  background-color: white;
+  color: black;
+  font-family: "Oswald";
 }
 .slider--pagination .swiper-pagination-bullet-active {
   background-color: rgb(190, 173, 142);
+  color: white;
+}
+.slider--pagination .swiper-pagination-bullet span {
+  padding-bottom: 0.7em;
 }
 
 .room {
@@ -1751,7 +1784,6 @@ footer .footer p {
 .room__image {
   width: 100%;
   height: auto;
-  margin-top: 2em;
 }
 .room__info {
   display: flexbox;
