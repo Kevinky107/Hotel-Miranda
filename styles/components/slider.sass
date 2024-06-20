@@ -21,3 +21,39 @@
 
             &-active
                 background-color: $mainColor
+    
+    &--pagination
+        .swiper
+            width: 100%
+            height: fit-content
+            z-index: 0
+            margin-bottom: 2em
+
+        .swiper-wrapper
+            margin: 0
+            padding: 0
+
+            .swiper-slide
+                margin: 0
+                padding-bottom: 3em
+                position: relative
+        
+        .swiper-pagination-bullet
+            border-radius: 0
+            opacity: 1
+            width: 2em
+            height: 1.75em
+            padding-top: 0.25em
+            background-color: white
+            color: black
+            font-family: "Oswald"
+
+            &-active
+                background-color: $mainColor
+                color: white
+
+            span
+                padding-bottom: 0.7em
+
+
+            
