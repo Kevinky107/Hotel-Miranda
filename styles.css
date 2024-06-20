@@ -48,6 +48,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -169,6 +170,79 @@ input[type=submit] {
 }
 .card button {
   margin-top: 2em;
+}
+
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-top: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
 }
 
 .card--offer {
@@ -1009,6 +1083,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -1130,6 +1205,79 @@ input[type=submit] {
 }
 .card button {
   margin-top: 2em;
+}
+
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-top: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
 }
 
 .card--offer {
@@ -1669,6 +1817,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -2022,6 +2171,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -2143,6 +2293,79 @@ input[type=submit] {
 }
 .card button {
   margin-top: 2em;
+}
+
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-top: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
 }
 
 .card--offer {
@@ -2565,6 +2788,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -2686,6 +2910,79 @@ input[type=submit] {
 }
 .card button {
   margin-top: 2em;
+}
+
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-top: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
 }
 
 .card--offer {
@@ -3119,6 +3416,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
