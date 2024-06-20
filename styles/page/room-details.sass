@@ -50,3 +50,35 @@
             padding-inline: 1.5em
             padding-top: 1.5em
             @include Text
+
+    .autor
+        padding-block: 2em
+        padding-inline: 1.5em
+        text-align: center
+
+        div
+            position: relative
+            margin: auto
+            height: 10em
+            width: 10em
+            border-radius: 10em
+            background-image: url("public/yo.jpeg")
+            background-size: 10em
+            margin-bottom: 1em
+
+            img
+                position: absolute
+                top: 0
+                right: 0
+        
+        h2
+            @include SmallTitles
+            padding-block: 0.4em
+
+        h4
+            @include Subtitles($mainColor)
+            padding-block: 0.4em
+
+        p
+            @include Text
+            padding-top: 1em
