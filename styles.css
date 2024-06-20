@@ -1881,11 +1881,12 @@ footer .footer p {
 }
 .room__info {
   display: flexbox;
-  width: 90%;
+  width: 95%;
   text-align: center;
   justify-items: center;
   background-color: white;
   padding: 0.5em;
+  padding-bottom: 2em;
   margin: auto;
   margin-top: -1.5em;
 }
@@ -2352,11 +2353,12 @@ footer .footer p {
 }
 .room__info {
   display: flexbox;
-  width: 90%;
+  width: 95%;
   text-align: center;
   justify-items: center;
   background-color: white;
   padding: 0.5em;
+  padding-bottom: 2em;
   margin: auto;
   margin-top: -1.5em;
 }
@@ -2442,6 +2444,26 @@ footer .footer p {
 
 .offers .cards {
   padding-block: 2em;
+}
+.offers .popular {
+  background-color: rgb(34, 34, 34);
+  padding-block: 3em;
+  text-align: center;
+}
+.offers .popular h4 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+.offers .popular h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
 }
 
 * {
