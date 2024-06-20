@@ -1858,7 +1858,7 @@ footer .footer p {
 }
 
 .room {
-  padding: 1.5em;
+  margin: 1.5em;
 }
 .room h4 {
   color: rgb(119, 119, 119);
@@ -2328,12 +2328,10 @@ footer .footer p {
   font-weight: 700;
 }
 
-.picker {
-  display: flexbox;
-  justify-items: center;
-  text-align: center;
+.room {
+  margin: 1.5em;
 }
-.picker h4 {
+.room h4 {
   color: rgb(119, 119, 119);
   font-family: "Archivo";
   font-weight: 500;
@@ -2341,110 +2339,105 @@ footer .footer p {
   letter-spacing: 0.3rem;
   margin-bottom: 1em;
 }
-.picker h1 {
+.room h1 {
   color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
   font-size: 3rem;
   margin-bottom: 0.3em;
 }
-.picker .swiper {
+.room__image {
   width: 100%;
-  height: 30em;
-  z-index: 0;
-  padding: 0;
+  height: auto;
 }
-.picker .swiper .swiper-button-next {
-  width: 2em;
-  height: 2em;
-  background-color: rgb(190, 173, 142);
-  color: white;
-  top: var(--swiper-navigation-top-offset, 35%);
-}
-.picker .swiper .swiper-button-next::after {
-  font-size: 0.5em;
-}
-.picker .swiper .swiper-button-prev {
-  width: 2em;
-  height: 2em;
-  background-color: rgb(190, 173, 142);
-  color: white;
-  top: var(--swiper-navigation-top-offset, 35%);
-}
-.picker .swiper .swiper-button-prev::after {
-  font-size: 0.5em;
-}
-.picker .swiper .swiper-button-disabled {
-  color: black;
-  background-color: white;
-  opacity: 1;
-}
-.picker .swiper .swiper-wrapper {
-  margin: 0;
-  padding: 0;
-}
-.picker .swiper .swiper-wrapper .swiper-slide {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.picker .swiper picture {
-  display: inline-flex;
-  background-color: white;
-  padding: 0.5em;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 1em;
-  width: fit-content;
-  margin: auto;
-}
-.picker .swiper picture img {
-  padding-inline: 0.5em;
-}
-.picker .swiper .slide-image {
-  width: 100%;
-  height: 267px;
-  margin-top: 2em;
-}
-.picker .swiper .slide-info {
+.room__info {
   display: flexbox;
   width: 90%;
+  text-align: center;
   justify-items: center;
   background-color: white;
   padding: 0.5em;
-  position: absolute;
-  top: 17.5em;
-  left: 0;
-  right: 0;
   margin: auto;
+  margin-top: -1.5em;
 }
-.picker .swiper .slide-info h3 {
-  color: black;
+.room__info picture {
+  display: inline-flex;
+  background-color: white;
+  padding: 0.5em;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+}
+.room__info picture img {
+  padding-inline: 0.5em;
+}
+.room__info h3 {
   font-family: "Old Standard TT";
   font-weight: 100;
-  font-size: 1.7rem;
-  margin-bottom: 0.5em;
+  font-size: 1.4rem;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
 }
-.picker .swiper .slide-info h5 {
-  width: 80%;
-  margin-inline: auto;
+.room__info h5 {
   margin-bottom: 1em;
-  color: rgb(34, 34, 34);
+  color: rgb(119, 119, 119);
   font-family: "Archivo";
   font-size: 0.85rem;
   line-height: 1.4rem;
   font-weight: 300;
 }
-.picker .swiper .slide-info p {
+.room__info p {
   color: rgb(190, 173, 142);
   font-family: "Archivo";
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
-.picker .swiper .slide-info p strong {
-  color: rgb(190, 173, 142);
-  font-family: "Archivo";
-  font-size: 1.4rem;
+.room__info p strong {
+  padding-left: 1em;
+  color: rgb(189, 189, 189);
+}
+
+.rooms-slider .swiper {
+  width: 100%;
+  height: fit-content;
+  z-index: 0;
+  padding: 0;
+}
+.rooms-slider .swiper .swiper-button-next {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 32%);
+  right: 1em;
+}
+.rooms-slider .swiper .swiper-button-next::after {
+  font-size: 0.5em;
+}
+.rooms-slider .swiper .swiper-button-prev {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 32%);
+  left: 1em;
+}
+.rooms-slider .swiper .swiper-button-prev::after {
+  font-size: 0.5em;
+}
+.rooms-slider .swiper .swiper-button-disabled {
+  color: black;
+  background-color: white;
+  opacity: 1;
+}
+.rooms-slider .swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.rooms-slider .swiper .swiper-wrapper .swiper-slide {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .offers .cards {
