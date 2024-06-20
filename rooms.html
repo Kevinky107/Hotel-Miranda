@@ -21,7 +21,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="./scripts/navbar.js" defer></script>
     </head>
-    <boddy class="rooms">
+    <body class="rooms">
         <nav>
             <div class="navbar">
                 <div class="navbar__left">
@@ -48,9 +48,58 @@
         <header>
             <h4>THE ULTIMATE LUXURY</h4>
             <h1>Ultimate Room</h1>
+            <div class="return">
+                <p><a href="./index.html">Home</a> | <span>Rooms</span></p>
+            </div>
         </header>
         <main>
-            
+            <article class="slider--pagination">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="room">
+                                <img class="room__image"
+                                    src="public/swiper/room3.jpg">
+                                <div class="room__info">
+                                    <picture>
+                                        <img src="public/room/bed.svg">
+                                        <img src="public/room/wifi.svg">
+                                        <img src="public/room/car.svg">
+                                        <img src="public/room/cold.svg">
+                                        <img src="public/room/gym.svg">
+                                        <img src="public/room/no-smoking.svg">
+                                        <img src="public/room/bar.svg">
+                                    </picture>
+                                    <h3>Minimal Duplex Room</h3>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h5>
+                                    <p>$345/Night<strong>Booking Now</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room">
+                                <img class="room__image"
+                                    src="public/swiper/room1.jpg">
+                                <div class="room__info">
+                                    <picture>
+                                        <img src="public/room/bed.svg">
+                                        <img src="public/room/wifi.svg">
+                                        <img src="public/room/car.svg">
+                                        <img src="public/room/cold.svg">
+                                        <img src="public/room/gym.svg">
+                                        <img src="public/room/no-smoking.svg">
+                                        <img src="public/room/bar.svg">
+                                    </picture>
+                                    <h3>Minimal Duplex Room</h3>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h5>
+                                    <p>$345/Night</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
         </main>
         <footer>
             <div class="footer-info">
@@ -112,5 +161,14 @@
                 <p>Terms of use | Privacy Environmental Policy</p>
             </div>
         </footer>
-    </boddy>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            let slider = new Swiper('.swiper', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
+            });
+        </script>
+    </body>
 </html>
