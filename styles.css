@@ -48,6 +48,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -171,6 +172,79 @@ input[type=submit] {
   margin-top: 2em;
 }
 
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-block: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+
 .card--offer {
   margin: 1.5em;
   text-align: left;
@@ -236,16 +310,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -1009,6 +1086,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -1132,6 +1210,79 @@ input[type=submit] {
   margin-top: 2em;
 }
 
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-block: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+
 .card--offer {
   margin: 1.5em;
   text-align: left;
@@ -1197,16 +1348,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -1669,6 +1823,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -2022,6 +2177,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {
@@ -2145,6 +2301,79 @@ input[type=submit] {
   margin-top: 2em;
 }
 
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-block: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+
 .card--offer {
   margin: 1.5em;
   text-align: left;
@@ -2210,16 +2439,713 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
+  padding: 0;
+}
+.card--offer__info button {
+  margin-top: 1em;
+}
+
+.card--shadow2 {
+  padding: 1.5em;
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--shadow2 img {
+  width: 100%;
+}
+.card--shadow2 h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.card--shadow2 h1 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 2rem;
+}
+.card--shadow2 p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1.5em;
+}
+.card--shadow2 button {
+  margin-top: 1em;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+}
+
+.card--black {
+  padding: 1.5em;
+  padding-block: 3em;
+  text-align: left;
+  background: rgb(34, 34, 34);
+}
+.card--black img {
+  width: 100%;
+}
+.card--black h4 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.card--black h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.card--black p {
+  color: white;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+.card--black button {
+  margin-top: 2em;
+}
+.card--black .videoWrapper {
+  margin-top: 1.5em;
+}
+
+footer .footer-info {
+  overflow: hidden;
+  position: relative;
+  padding: 1.5em;
+  padding-top: 2em;
+}
+footer .footer-info .background {
+  opacity: 0.01;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+footer .footer-info h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding-block: 2em;
+}
+footer .footer-info h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding-bottom: 1em;
+}
+footer .footer-info__social {
+  padding-bottom: 2em;
+}
+footer .footer-info__social img {
+  padding-right: 0.5em;
+}
+footer .footer-info .list {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 10em auto;
+  padding-bottom: 1em;
+}
+footer .footer-info .list ul {
+  display: block;
+  padding-bottom: 1em;
+}
+footer .footer-info .list ul li {
+  font-family: "Roboto";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  list-style: none;
+  padding-block: 0.7em;
+  color: rgb(119, 119, 119);
+}
+footer .footer-info picture {
+  display: inline-flex;
+  height: 2em;
+  padding-block: 1em;
+  padding-inline-end: 1.5em;
+  gap: 1.2em;
+}
+footer .footer-info picture h4 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  padding: 0;
+  color: black;
+}
+footer .footer-info picture p {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  padding-inline: 1.5em;
+  padding-block: 0.5em;
+  gap: 0.5em;
+}
+footer .footer p {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.room {
+  margin: 1.5em;
+}
+.room h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1em;
+}
+.room h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+}
+.room__image {
+  width: 100%;
+  height: auto;
+}
+.room__info {
+  display: flexbox;
+  width: 95%;
+  text-align: center;
+  justify-items: center;
+  background-color: white;
+  padding: 0.5em;
+  padding-bottom: 2em;
+  margin: auto;
+  margin-top: -1.5em;
+}
+.room__info picture {
+  display: inline-flex;
+  background-color: white;
+  padding: 0.5em;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+}
+.room__info picture img {
+  padding-inline: 0.5em;
+}
+.room__info h3 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+.room__info h5 {
+  margin-bottom: 1em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+.room__info p {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.room__info p strong {
+  padding-left: 1em;
+  color: rgb(189, 189, 189);
+}
+
+.rooms-slider .swiper {
+  width: 100%;
+  height: fit-content;
+  z-index: 0;
+  padding: 0;
+}
+.rooms-slider .swiper .swiper-button-next {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 32%);
+  right: 1em;
+}
+.rooms-slider .swiper .swiper-button-next::after {
+  font-size: 0.5em;
+}
+.rooms-slider .swiper .swiper-button-prev {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  top: var(--swiper-navigation-top-offset, 32%);
+  left: 1em;
+}
+.rooms-slider .swiper .swiper-button-prev::after {
+  font-size: 0.5em;
+}
+.rooms-slider .swiper .swiper-button-disabled {
+  color: black;
+  background-color: white;
+  opacity: 1;
+}
+.rooms-slider .swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.rooms-slider .swiper .swiper-wrapper .swiper-slide {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.room-details .related, .room-details .amentities, .room-details .cancellation {
+  padding-block: 2em;
+}
+.room-details .related h1, .room-details .amentities h1, .room-details .cancellation h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-inline: 1.5rem;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgb(249, 249, 249);
+}
+.room-details .amentities article {
+  padding-inline: 1.5em;
+  list-style: none;
+  column-count: 2;
+  padding-top: 1em;
+}
+.room-details .amentities article li {
+  list-style: none;
+  display: flexbox;
+  padding-block: 0.5em;
+  align-items: center;
+}
+.room-details .amentities article li img {
+  display: inline-flex;
+  padding-right: 0.5em;
+  width: 1.2em;
+  height: 1.2em;
+}
+.room-details .amentities article li p {
+  display: inline-flex;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  color: rgb(119, 119, 119);
+}
+.room-details .cancellation p {
+  padding-inline: 1.5em;
+  padding-top: 1.5em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+}
+.room-details .autor {
+  padding-block: 2em;
+  padding-inline: 1.5em;
+  text-align: center;
+}
+.room-details .autor div {
+  position: relative;
+  margin: auto;
+  height: 10em;
+  width: 10em;
+  border-radius: 10em;
+  background-image: url("public/yo.jpeg");
+  background-size: 10em;
+  margin-bottom: 1em;
+}
+.room-details .autor div img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.room-details .autor h2 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+  padding-block: 0.4em;
+}
+.room-details .autor h4 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-block: 0.4em;
+}
+.room-details .autor p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+
+header {
+  background-color: rgb(51, 51, 51);
+  padding: 1.5em;
+  padding-block: 5em;
+  padding-top: 9em;
+  position: relative;
+}
+header h4 {
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+}
+header h1 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+header button {
+  background-color: rgb(190, 173, 142);
+  margin-top: 3em;
+}
+header button:last-of-type {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(189, 189, 189);
+  margin-top: 2em;
+}
+header .return {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  right: 1em;
+}
+header .return p {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  word-spacing: 0.5em;
+}
+header .return p a {
+  text-decoration: none;
+  color: black;
+}
+header .return p span {
+  color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
+}
+
+button {
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 15em;
+  height: 4.5em;
+}
+
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
+}
+
+.navbar {
+  position: fixed;
+  display: inline-flex;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  z-index: 5;
+}
+.navbar__left {
+  display: inline-flex;
+}
+.navbar__left__menu {
+  width: 1.3em;
+  padding: 1em;
+}
+.navbar__left__logo {
+  padding-inline: 1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+}
+.navbar__left__logo img:first-child {
+  box-shadow: 0px 5px 10px 0px rgb(223, 223, 223);
+}
+.navbar__right {
+  display: inline-flex;
+  padding-inline: 1em;
+  gap: 1.5em;
+}
+
+.nav-links {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 4.34em;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  padding: 1em;
+  z-index: 4;
+}
+.nav-links ul {
+  list-style: none;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 600;
+}
+.nav-links ul li {
+  padding-block: 0.5em;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links--hide {
+  display: none;
+}
+
+.card {
+  padding: 1.5em;
+  padding-block: 5em;
+  text-align: left;
+}
+.card img {
+  width: 100%;
+}
+.card h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+.card h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.card p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+.card button {
+  margin-top: 2em;
+}
+
+.card--details {
+  padding: 1.5em;
+  padding-block: 2em;
+  text-align: left;
+}
+.card--details img {
+  width: 100%;
+}
+.card--details h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--details h1 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.card--details h2 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.7rem;
+  padding-block: 1em;
+}
+.card--details h2 strong {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 1.4rem;
+}
+.card--details form {
+  padding-block: 2em;
+  font-family: Archivo;
+}
+.card--details form h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card--details form p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+}
+.card--details form input[type=date] {
+  font-family: Archivo;
+  color: rgb(119, 119, 119);
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 1.5em;
+  margin-top: 0.5em;
+}
+.card--details form input::-webkit-calendar-picker-indicator {
+  font-size: 1.1rem;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%);
+}
+.card--details form input[type=submit] {
+  margin-inline: 0;
+  width: 100%;
+}
+.card--details p {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding-top: 1em;
+}
+
+.card--offer {
+  margin: 1.5em;
+  text-align: left;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.card--offer picture {
+  text-align: right;
+  position: relative;
+}
+.card--offer picture img {
+  width: 100%;
+}
+.card--offer picture div {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.card--offer picture div h3 {
+  color: rgb(190, 173, 142);
+  font-family: "Archivo";
+  font-size: 0.6rem;
+}
+.card--offer picture div h3 strong {
+  font-size: 1.1rem;
+  text-decoration: line-through;
+}
+.card--offer picture div h2 {
+  color: rgb(222, 87, 119);
+  font-family: "Archivo";
+  font-size: 0.6rem;
+}
+.card--offer picture div h2 strong {
+  font-size: 1.5rem;
+}
+.card--offer__info {
+  padding: 1.5em;
+  padding-top: 0;
+}
+.card--offer__info h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+}
+.card--offer__info h1 {
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+.card--offer__info p {
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  color: rgb(119, 119, 119);
+  padding-top: 1.5em;
+}
+.card--offer__info ul {
+  list-style: none;
+  column-count: 2;
+  padding-top: 1em;
+}
+.card--offer__info ul li {
+  list-style: none;
+  display: flexbox;
+  padding-block: 0.5em;
+  align-items: center;
+}
+.card--offer__info ul li img {
+  display: inline-flex;
+  padding-right: 0.5em;
+  width: 1.2em;
+  height: 1.2em;
+}
+.card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -2576,6 +3502,7 @@ header .return p a {
 }
 header .return p span {
   color: rgb(190, 173, 142);
+  word-spacing: 0.1em;
 }
 
 button {

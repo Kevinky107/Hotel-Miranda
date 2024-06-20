@@ -24,6 +24,70 @@
         margin-top: 2em
 
 
+.card--details
+    padding: 1.5em
+    padding-block: 2em
+    text-align: left
+
+    img
+        width: 100%
+
+    h4
+        color: $grayText
+        font-family: "Archivo"
+        font-weight: 600
+        font-size: 0.8rem
+        letter-spacing: 0.2rem
+        margin-bottom: 1.5em
+        padding-top: 2em
+
+    h1
+        @include SmallTitles(black)
+
+    h2
+        @include Night
+        padding-block: 1em
+
+        strong
+            @include Price
+    
+    form
+        padding-block: 2em
+        font-family: Archivo
+
+        h3
+            text-align: center
+            font-size: 1.1rem
+            font-weight: 700
+
+        p
+            font-size: 0.85rem
+            font-weight: 700
+            color: black
+
+        input[type="date"]
+            font-family: Archivo
+            color: $grayText
+            border: none
+            background-color: rgba(248, 248, 248, 1)
+            width: 100%
+            padding: 1.5em
+            margin-top: 0.5em
+
+        input::-webkit-calendar-picker-indicator 
+            font-size: 1.1rem
+            filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(60%)
+
+        input[type="submit"]
+            margin-inline: 0
+            width: 100%
+
+
+    p
+        @include Text()
+        padding-top: 1em
+
+
 .card--offer
     margin: 1.5em
     text-align: left
@@ -89,16 +153,19 @@
             padding-top: 1em
 
             li
-                display: inline-flex
-                align-items: center
+                list-style: none
+                display: flexbox
                 padding-block: 0.5em
+                align-items: center
 
                 img
+                    display: inline-flex
                     padding-right: 0.5em
                     width: 1.2em
                     height: 1.2em
 
                 p
+                    display: inline-flex
                     padding: 0
 
         button
