@@ -4,7 +4,7 @@ const dropdown = document.getElementById("dropdown")
 
 
 logo.addEventListener("click", function(){
-    window.location.href = "../index.html"
+    window.location.href = "./index.html"
 })
 
 menu.addEventListener("click", function(){
