@@ -2817,6 +2817,26 @@ footer .footer p {
   padding-block: 2em;
   padding-bottom: 2em;
   padding-inline: 1.5em;
+  text-align: center;
+}
+.contact .form input[type=text] {
+  border: none;
+  background-color: rgb(248, 248, 248);
+  padding: 1.5em;
+  width: 100%;
+  margin-block: 0.5em;
+}
+.contact .form textarea {
+  border: none;
+  background-color: rgb(248, 248, 248);
+  padding: 1.5em;
+  width: 100%;
+  margin-block: 0.5em;
+  margin-bottom: 1em;
+  font-family: Roboto;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
 }
 
 * {
