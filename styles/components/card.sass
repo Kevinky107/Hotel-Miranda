@@ -25,30 +25,66 @@
 
 
 .card--shadow
-    padding: 1.5em
     margin: 1.5em
     text-align: left
     box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1)
 
-    img
-        width: 100%
+    picture
+        text-align: right
+        position: relative
 
-    h4
-        @include Subtitles($grayText)
-        margin-bottom: 2em
-        padding-top: 2em
+        img
+            width: 100%
 
-    h1
-        font-family: "Old Standard TT"
-        font-weight: 100
-        font-size: 2rem
+        div
+            position: absolute
+            bottom: 1em
+            right: 1em
 
-    p
-        @include Text()
-        padding-top: 1.5em
+            h3
+                color: $mainColor
+                font-family: "Archivo"
+                font-size: 0.6rem
 
-    button
-        margin-top: 1em
+                strong
+                    font-size: 1.1rem
+                    text-decoration: line-through
+            
+            h2
+                color: rgba(222, 87, 119, 1)
+                font-family: "Archivo"
+                font-size: 0.6rem
+
+                strong
+                    font-size: 1.5rem
+
+    &__info
+        padding: 1.5em
+        padding-top: 0
+
+        h4
+            color: $grayText
+            font-family: "Archivo"
+            font-weight: 600
+            font-size: 0.8rem
+            letter-spacing: 0.3rem
+            margin-bottom: 1.5em
+            padding-top: 2em
+
+        h1
+            font-family: "Old Standard TT"
+            font-weight: 100
+            font-size: 2.3rem
+
+        p
+            font-family: "Archivo"
+            font-size: 0.85rem
+            line-height: 1.4rem
+            color: $grayText
+            padding-top: 1.5em
+
+        button
+            margin-top: 1em
 
 
 .card--shadow2
