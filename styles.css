@@ -1374,6 +1374,53 @@ footer .footer p {
 .about-us .facilities--dark .swiper {
   padding-bottom: 2em;
 }
+.about-us .counter {
+  padding: 1.5em;
+}
+.about-us .counter h4 {
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-top: 2em;
+}
+.about-us .counter h2 {
+  color: black;
+  font-family: "Old Standard TT";
+  font-weight: 100;
+  font-size: 3rem;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+}
+.about-us .counter picture {
+  display: inline-flex;
+  align-items: center;
+  padding-block: 2em;
+  padding-left: 0.5em;
+}
+.about-us .counter picture__ico {
+  width: 4em;
+}
+.about-us .counter picture div {
+  width: 8em;
+  padding-left: 1em;
+}
+.about-us .counter picture div h2 {
+  padding: 0;
+  line-height: 2.3rem;
+}
+.about-us .counter picture div p {
+  font-family: "Roboto";
+  color: rgb(119, 119, 119);
+  font-size: 0.8rem;
+  padding-top: 0.5em;
+}
+.about-us .counter__arrow {
+  width: 2em;
+  padding-left: 1em;
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(6deg) brightness(220%);
+}
 
 * {
   margin: 0;
