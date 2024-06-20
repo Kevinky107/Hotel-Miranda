@@ -63,6 +63,21 @@ button {
   height: 4.5em;
 }
 
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
+}
+
 .navbar {
   position: fixed;
   display: inline-flex;
@@ -1009,6 +1024,21 @@ button {
   height: 4.5em;
 }
 
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
+}
+
 .navbar {
   position: fixed;
   display: inline-flex;
@@ -1654,6 +1684,21 @@ button {
   height: 4.5em;
 }
 
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
+}
+
 .navbar {
   position: fixed;
   display: inline-flex;
@@ -1990,6 +2035,21 @@ button {
   display: block;
   width: 15em;
   height: 4.5em;
+}
+
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
 }
 
 .navbar {
@@ -2529,6 +2589,21 @@ button {
   display: block;
   width: 15em;
   height: 4.5em;
+}
+
+input[type=submit] {
+  margin: auto;
+  margin-top: 1em;
+  background-color: rgb(190, 173, 142);
+  color: white;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  display: block;
+  width: 20em;
+  height: 4em;
 }
 
 .navbar {
