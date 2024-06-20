@@ -179,6 +179,22 @@
                     </div>
                     <img class="counter__arrow" src="public/arrow.svg"/>
                 </picture>
+                <article class="slider">
+                    <div class="swiper swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <img src="public/counter/image1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="public/counter/image2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="public/counter/imag3.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination1"></div>
+                    </div>
+                </article>
             </section>
         </main>
         <footer>
@@ -246,6 +262,12 @@
             let slider = new Swiper('.swiper2', {
                 pagination: {
                     el: '.swiper-pagination2',
+                    clickable: true
+                }
+            });
+            let slider1 = new Swiper('.swiper1', {
+                pagination: {
+                    el: '.swiper-pagination1',
                     clickable: true
                 }
             });
