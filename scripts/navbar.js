@@ -3,8 +3,6 @@ const menu = document.getElementById("open")
 const dropdown = document.getElementById("dropdown")
 const to_booking = document.getElementsByClassName("booking")
 
-console.log(to_booking)
-
 logo.addEventListener("click", function(){
     window.location.href = "./index.html"
 })
