@@ -207,7 +207,7 @@ input[type=submit] {
   font-size: 1.4rem;
 }
 .card--details form {
-  padding-top: 2em;
+  padding-block: 2em;
   font-family: Archivo;
 }
 .card--details form h3 {
@@ -310,16 +310,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -1242,7 +1245,7 @@ input[type=submit] {
   font-size: 1.4rem;
 }
 .card--details form {
-  padding-top: 2em;
+  padding-block: 2em;
   font-family: Archivo;
 }
 .card--details form h3 {
@@ -1345,16 +1348,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -2330,7 +2336,7 @@ input[type=submit] {
   font-size: 1.4rem;
 }
 .card--details form {
-  padding-top: 2em;
+  padding-block: 2em;
   font-family: Archivo;
 }
 .card--details form h3 {
@@ -2433,16 +2439,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
@@ -2725,10 +2734,10 @@ footer .footer p {
   position: relative;
 }
 
-.room-details .related {
-  padding-block: 4em;
+.room-details .related, .room-details .amentities, .room-details .cancellation {
+  padding-block: 2em;
 }
-.room-details .related h4 {
+.room-details .related h1, .room-details .amentities h1, .room-details .cancellation h1 {
   color: black;
   font-family: "Old Standard TT";
   font-weight: 100;
@@ -2736,6 +2745,38 @@ footer .footer p {
   margin-inline: 1.5rem;
   padding-bottom: 0.5em;
   border-bottom: 1px solid rgb(249, 249, 249);
+}
+.room-details .amentities article {
+  padding-inline: 1.5em;
+  list-style: none;
+  column-count: 2;
+  padding-top: 1em;
+}
+.room-details .amentities article li {
+  list-style: none;
+  display: flexbox;
+  padding-block: 0.5em;
+  align-items: center;
+}
+.room-details .amentities article li img {
+  display: inline-flex;
+  padding-right: 0.5em;
+  width: 1.2em;
+  height: 1.2em;
+}
+.room-details .amentities article li p {
+  display: inline-flex;
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  color: rgb(119, 119, 119);
+}
+.room-details .cancellation p {
+  padding-inline: 1.5em;
+  padding-top: 1.5em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo";
+  font-size: 0.85rem;
+  line-height: 1.3rem;
 }
 
 header {
@@ -2947,7 +2988,7 @@ input[type=submit] {
   font-size: 1.4rem;
 }
 .card--details form {
-  padding-top: 2em;
+  padding-block: 2em;
   font-family: Archivo;
 }
 .card--details form h3 {
@@ -3050,16 +3091,19 @@ input[type=submit] {
   padding-top: 1em;
 }
 .card--offer__info ul li {
-  display: inline-flex;
-  align-items: center;
+  list-style: none;
+  display: flexbox;
   padding-block: 0.5em;
+  align-items: center;
 }
 .card--offer__info ul li img {
+  display: inline-flex;
   padding-right: 0.5em;
   width: 1.2em;
   height: 1.2em;
 }
 .card--offer__info ul li p {
+  display: inline-flex;
   padding: 0;
 }
 .card--offer__info button {
