@@ -51,6 +51,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -77,6 +96,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -111,8 +134,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -121,23 +143,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -1089,6 +1154,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -1115,6 +1199,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -1149,8 +1237,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -1159,23 +1246,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -1826,6 +1956,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -1852,6 +2001,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -1886,8 +2039,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -1896,23 +2048,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -2180,6 +2375,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -2206,6 +2420,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -2240,8 +2458,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -2250,23 +2467,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -2874,6 +3134,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -2900,6 +3179,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -2934,8 +3217,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -2944,23 +3226,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -3505,6 +3830,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -3531,6 +3875,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -3565,8 +3913,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -3575,23 +3922,66 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;

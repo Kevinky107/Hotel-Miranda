@@ -1,3 +1,8 @@
+@import ../variables
+
+nav
+    background-color: $black
+
 .navbar
     position: fixed
     display: inline-flex
@@ -30,34 +35,77 @@
         padding-inline: 1em
         gap: 1.5em
 
-.nav-links 
-    position: fixed
-    width: 100%
-    background-color: white
-    top: 4.34em
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29)
-    padding: 1em
-    z-index: 4
+    .nav-links 
+        position: fixed
+        width: 100%
+        background-color: white
+        top: 4.34em
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29)
+        padding: 1em
+        z-index: 4
 
-    ul
-        list-style: none
-        font-family: "Archivo"
-        font-size: 1em
-        font-weight: 600
-
-
-        li
-            padding-block: 0.5em
-
-            a
-                text-decoration: none
-                color: black
+        ul
+            list-style: none
+            font-family: "Archivo"
+            font-size: 1em
+            font-weight: 600
 
 
-    &--hide 
-        display: none
+            li
+                padding-block: 0.5em
+
+                a
+                    text-decoration: none
+                    color: black
+
+
+        &--hide 
+            display: none
 
         
         
-
+@media only screen and (min-width: 1000px)
+    nav
+     padding-top: 0.5em 
     
+    .navbar
+        margin-top: 1em
+        margin-bottom: -2em
+        position: relative
+        width: 80%
+        display: flex
+        margin-inline: auto
+        padding-inline: 1em
+    
+        &__left
+            &__menu
+                display: none
+
+        &__right
+            img
+                padding: 0.3em
+                border: solid 2px $lightGray
+
+        .nav-links, .nav-links--hide
+            display: block
+            position: absolute
+            width: fit-content
+            top: 1.5em
+            left: 15em
+            margin: auto
+            z-index: 5
+
+            ul
+            list-style: none
+            font-family: "Archivo"
+            font-size: 0.9rem
+            font-weight: 600
+
+            li
+                padding-block: 0.5em
+                display: inline-flex
+                padding-right: 2em
+
+                a
+                    text-decoration: none
+                    color: black
