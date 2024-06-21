@@ -466,10 +466,59 @@ nav {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 .picker {
   display: flexbox;
   justify-items: center;
@@ -1147,6 +1196,9 @@ footer .footer p {
 }
 
 @media only screen and (min-width: 1000px) {
+  .home section {
+    overflow: hidden;
+  }
   .home .availability {
     width: 100%;
   }
@@ -1231,6 +1283,7 @@ footer .footer p {
   }
   .home .picker {
     padding-block: 2em;
+    padding-top: 5em;
   }
 }
 header {
@@ -1701,10 +1754,59 @@ nav {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -2928,10 +3030,59 @@ nav {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -3690,10 +3841,59 @@ nav {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
