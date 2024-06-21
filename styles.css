@@ -202,6 +202,9 @@ nav {
     text-decoration: none;
     color: black;
   }
+  .navbar img:hover {
+    cursor: pointer;
+  }
 }
 .card {
   padding: 1.5em;
@@ -926,7 +929,6 @@ footer .footer p {
   right: 0;
   left: 0;
   top: 0;
-  padding-left: 7em;
   padding-top: 4em;
 }
 .home .about-us__teamInfo h3 {
@@ -1101,6 +1103,90 @@ footer .footer p {
   color: rgb(119, 119, 119);
 }
 
+@media only screen and (min-width: 1000px) {
+  .home .availability {
+    width: 100%;
+  }
+  .home .availability__form {
+    margin: 0;
+    padding: 0;
+    padding-block: 2em;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    width: 100%;
+  }
+  .home .availability__form div {
+    width: 20%;
+  }
+  .home .availability__form input[type=submit] {
+    margin: 0;
+    margin-left: 5%;
+  }
+  .home .about-us {
+    display: inline-flex;
+    position: relative;
+    padding-block: 4em;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+  .home .about-us .card {
+    width: 50%;
+    max-width: 20em;
+    order: 3;
+    padding: 0;
+    margin-left: 2em;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .home .about-us__teamInfo {
+    order: 1;
+    margin: 1em;
+    width: 25%;
+    flex-direction: column-reverse;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  .home .about-us__roomInfo {
+    order: 2;
+    margin: 0;
+    width: 25%;
+    padding: 0;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  .home .about-us__roomInfo div {
+    margin-top: 1em;
+    background-color: rgb(34, 34, 34);
+  }
+  .home .about-us__roomInfo h4 {
+    padding-bottom: 4.7em;
+  }
+  .home .about-us .group-img, .home .about-us .room-img {
+    height: 18em;
+    margin: 0;
+  }
+  .home .about-us .group-img {
+    padding-top: 3em;
+  }
+  .home .about-us .room-img {
+    background-color: white;
+    margin-top: 2em;
+  }
+  .home .about-us__decoration {
+    position: absolute;
+    height: 32em;
+    width: 50%;
+    background-color: rgb(249, 249, 249);
+    right: 0;
+    bottom: 1em;
+    z-index: -1;
+  }
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -1304,6 +1390,9 @@ nav {
   .navbar .nav-links li a, .navbar .nav-links--hide li a {
     text-decoration: none;
     color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
   }
 }
 .card {
@@ -2107,6 +2196,9 @@ nav {
     text-decoration: none;
     color: black;
   }
+  .navbar img:hover {
+    cursor: pointer;
+  }
 }
 footer .footer-info {
   overflow: hidden;
@@ -2525,6 +2617,9 @@ nav {
   .navbar .nav-links li a, .navbar .nav-links--hide li a {
     text-decoration: none;
     color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
   }
 }
 .card {
@@ -3285,6 +3380,9 @@ nav {
     text-decoration: none;
     color: black;
   }
+  .navbar img:hover {
+    cursor: pointer;
+  }
 }
 .card {
   padding: 1.5em;
@@ -3981,6 +4079,9 @@ nav {
     text-decoration: none;
     color: black;
   }
+  .navbar img:hover {
+    cursor: pointer;
+  }
 }
 footer .footer-info {
   overflow: hidden;
@@ -4187,6 +4288,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  button:hover {
+    cursor: pointer;
+  }
+  .booking:hover {
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
