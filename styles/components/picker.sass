@@ -100,7 +100,39 @@
                 strong
                     @include Price
 
-    
-                
+
+@media only screen and (min-width: 1000px)
+
+    .picker
+
+        .swiper
+            height: fit-content
+            .slide-image
+                width: 35em
+                height: 22em
+                margin-top: 2em
+                padding-bottom: 10em
+
+            .slide-info
+                top: 21em
+                width: 25em
+
+            .swiper-button-next
+                right: 30%
+                top: var(--swiper-navigation-top-offset, 40%)
+                width: 3em
+                height: 3em
+
+            .swiper-button-prev
+                left: 30%
+                top: var(--swiper-navigation-top-offset, 40%)
+                width: 3em
+                height: 3em
+
+            .swiper-button-prev::after
+                font-size: 1em
+
+            .swiper-button-next::after
+                font-size: 1em
 
         

@@ -589,6 +589,39 @@ nav {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .picker .swiper {
+    height: fit-content;
+  }
+  .picker .swiper .slide-image {
+    width: 35em;
+    height: 22em;
+    margin-top: 2em;
+    padding-bottom: 10em;
+  }
+  .picker .swiper .slide-info {
+    top: 21em;
+    width: 25em;
+  }
+  .picker .swiper .swiper-button-next {
+    right: 30%;
+    top: var(--swiper-navigation-top-offset, 40%);
+    width: 3em;
+    height: 3em;
+  }
+  .picker .swiper .swiper-button-prev {
+    left: 30%;
+    top: var(--swiper-navigation-top-offset, 40%);
+    width: 3em;
+    height: 3em;
+  }
+  .picker .swiper .swiper-button-prev::after {
+    font-size: 1em;
+  }
+  .picker .swiper .swiper-button-next::after {
+    font-size: 1em;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -1185,6 +1218,9 @@ footer .footer p {
     right: 0;
     bottom: 1em;
     z-index: -1;
+  }
+  .home .picker {
+    padding-block: 2em;
   }
 }
 header {
@@ -4292,6 +4328,9 @@ body {
 
 @media only screen and (min-width: 1000px) {
   button:hover {
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
     cursor: pointer;
   }
   .booking:hover {
