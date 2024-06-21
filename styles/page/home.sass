@@ -150,6 +150,10 @@
     .picker
         padding-bottom: 2em
 
+    .facilities
+        &__grid
+            display: none
+
     .menu
         padding: 1.5em
         overflow: hidden
@@ -349,3 +353,41 @@
             padding-top: 5em
 
         .facilities
+            padding-block: 5em
+            .slider
+                display: none
+            &__grid
+                display: flex
+                width: 60em
+                height: fit-content
+                flex-wrap: wrap
+                margin: auto
+
+                &__card
+                    margin: 1.5em
+                    text-align: left
+                    position: relative
+                    width: 17em
+                
+                    h2
+                        position: absolute
+                        color: $lightGray
+                        top: 0.1em
+                        right: 0.3em
+                        font-family: "Archivo"
+                        font-size: 7em
+
+                    img
+                        padding-top: 4em
+
+                    h3
+                        font-family: "Old Standard TT"
+                        font-weight: 100
+                        font-size: 1.6rem
+                        padding-block: 0.8em
+
+                    p
+                        @include Text2
+                        padding-bottom: 2em
+
+            

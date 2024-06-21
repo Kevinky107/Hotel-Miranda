@@ -1082,6 +1082,9 @@ footer .footer p {
 .home .picker {
   padding-bottom: 2em;
 }
+.home .facilities__grid {
+  display: none;
+}
 .home .menu {
   padding: 1.5em;
   overflow: hidden;
@@ -1284,6 +1287,50 @@ footer .footer p {
   .home .picker {
     padding-block: 2em;
     padding-top: 5em;
+  }
+  .home .facilities {
+    padding-block: 5em;
+  }
+  .home .facilities .slider {
+    display: none;
+  }
+  .home .facilities__grid {
+    display: flex;
+    width: 60em;
+    height: fit-content;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .home .facilities__grid__card {
+    margin: 1.5em;
+    text-align: left;
+    position: relative;
+    width: 17em;
+  }
+  .home .facilities__grid__card h2 {
+    position: absolute;
+    color: rgb(249, 249, 249);
+    top: 0.1em;
+    right: 0.3em;
+    font-family: "Archivo";
+    font-size: 7em;
+  }
+  .home .facilities__grid__card img {
+    padding-top: 4em;
+  }
+  .home .facilities__grid__card h3 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding-block: 0.8em;
+  }
+  .home .facilities__grid__card p {
+    color: rgb(34, 34, 34);
+    font-family: "Archivo";
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 2em;
   }
 }
 header {
