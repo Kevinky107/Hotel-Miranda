@@ -601,7 +601,17 @@ nav {
   }
   .picker .swiper .slide-info {
     top: 21em;
-    width: 25em;
+    width: 28em;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 1em;
+    gap: 2.5em;
+  }
+  .picker .swiper .slide-info div h5 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   .picker .swiper .swiper-button-next {
     right: 30%;
