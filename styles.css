@@ -1165,6 +1165,9 @@ footer .footer p {
   line-height: 1.2rem;
   font-weight: 400;
 }
+.home .menu__slider--desktop {
+  display: none;
+}
 .home .menu .slider {
   margin-top: 3em;
   padding-bottom: 2em;
@@ -1331,6 +1334,103 @@ footer .footer p {
     line-height: 1.4rem;
     font-weight: 300;
     padding-bottom: 2em;
+  }
+  .home .menu__donut {
+    right: auto !important;
+    left: 4em;
+  }
+  .home .menu__title {
+    text-align: center;
+    padding-right: 14.2em;
+    margin-bottom: -1em;
+  }
+  .home .menu__subtitle {
+    text-align: center;
+    padding-right: 75em;
+    margin-bottom: -1em;
+  }
+  .home .menu__slider {
+    display: none;
+  }
+  .home .menu__slider--desktop {
+    display: block;
+  }
+  .home .menu__slider--desktop .swiper {
+    height: fit-content;
+    width: 65em;
+    padding-top: 5em;
+    text-align: center;
+    margin: auto;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-next {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(190, 173, 142);
+    color: white;
+    top: 2em;
+    right: 2.4em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-next::after {
+    font-size: 0.5em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-prev {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(190, 173, 142);
+    color: white;
+    top: 2em;
+    left: auto !important;
+    right: 6em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-prev::after {
+    font-size: 0.5em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-disabled {
+    color: black;
+    background-color: rgb(249, 249, 249);
+    opacity: 1;
+  }
+  .home .menu__slider--desktop .swiper .slide {
+    text-align: center;
+  }
+  .home .menu__slider--desktop .swiper .slide picture {
+    margin-block: 1em;
+    margin-right: 2em;
+    display: inline-flex;
+    align-items: center;
+    width: 30em;
+    text-align: left;
+  }
+  .home .menu__slider--desktop .swiper .slide picture img {
+    height: 6em;
+    width: 6em;
+    padding-right: 2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture h4 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding-bottom: 0.2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture p {
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+  }
+  .home .menu__slider--desktop .swiper .slide picture .arrow {
+    filter: brightness(500%);
+    height: 2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture:hover {
+    background-color: rgb(34, 34, 34);
+    color: white;
+  }
+  .home .menu__slider--desktop .swiper .slide picture:hover .arrow {
+    filter: brightness(100%);
+  }
+  .home .menu .slider {
+    display: none;
   }
 }
 header {

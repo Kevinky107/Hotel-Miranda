@@ -229,6 +229,9 @@
                         line-height: 1.2rem
                         font-weight: 400
 
+            &--desktop
+                display: none
+
         .slider
             margin-top: 3em
             padding-bottom: 2em
@@ -390,4 +393,101 @@
                         @include Text2
                         padding-bottom: 2em
 
+        .menu
+            &__donut
+                right: auto !important
+                left: 4em
+
+            &__title
+                text-align: center
+                padding-right: 14.2em
+                margin-bottom: -1em
+
+            &__subtitle
+                text-align: center
+                padding-right: 75em
+                margin-bottom: -1em
+
+            &__slider
+                display: none
+
+                &--desktop
+                    display: block
+
+                    .swiper
+                        height: fit-content
+                        width: 65em
+                        padding-top: 5em
+                        text-align: center
+                        margin: auto
+
+                        .swiper-button-next
+                            width: 2.5em
+                            height: 2.5em
+                            background-color: $mainColor
+                            color: white
+                            top: 2em
+                            right: 2.4em
+
+                        .swiper-button-next::after
+                            font-size: 0.5em
+
+                        .swiper-button-prev
+                            width: 2.5em
+                            height: 2.5em
+                            background-color: $mainColor
+                            color: white
+                            top: 2em
+                            left: auto !important
+                            right: 6em
+
+                        .swiper-button-prev::after
+                            font-size: 0.5em
+
+                        .swiper-button-disabled
+                            color: black
+                            background-color: $lightGray
+                            opacity: 1
+
+                        .slide
+                            text-align: center
+
+                            picture
+                                margin-block: 1em
+                                margin-right: 2em
+                                display: inline-flex
+                                align-items: center
+                                width: 30em
+                                text-align: left
+
+                                img
+                                    height: 6em
+                                    width: 6em
+                                    padding-right: 2em
+
+                                h4
+                                    font-family: "Old Standard TT"
+                                    font-weight: 100
+                                    font-size: 1.4rem
+                                    padding-bottom: 0.2em
+
+                                p
+                                    font-family: "Roboto"
+                                    font-size: 0.85rem
+                                    line-height: 1.2rem
+                                    font-weight: 400
+
+                                .arrow
+                                    filter: brightness(500%)
+                                    height: 2em
+
+                            picture:hover
+                                background-color: $black
+                                color: white
+
+                                .arrow
+                                    filter: brightness(100%)
+
+            .slider
+                display: none
             
