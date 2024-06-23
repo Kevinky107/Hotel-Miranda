@@ -1090,6 +1090,9 @@ footer .footer p {
   overflow: hidden;
   position: relative;
 }
+.home .menu__buffet {
+  display: none;
+}
 .home .menu__donut {
   width: 10em;
   position: absolute;
@@ -1431,6 +1434,28 @@ footer .footer p {
   }
   .home .menu .slider {
     display: none;
+  }
+  .home .menu__buffet {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .home .menu__buffet img {
+    height: 20em;
+    padding-block: 2em;
+    padding-inline: 1%;
+  }
+  .home .numbers {
+    width: 65em;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 4em;
+  }
+  .home .numbers picture {
+    justify-content: center;
+    margin: auto;
   }
 }
 header {

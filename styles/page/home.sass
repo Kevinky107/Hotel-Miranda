@@ -159,6 +159,9 @@
         overflow: hidden
         position: relative
 
+        &__buffet
+            display: none
+
         &__donut
             width: 10em
             position: absolute
@@ -490,4 +493,26 @@
 
             .slider
                 display: none
+
+            &__buffet
+                width: 100%
+                display: inline-flex
+                justify-content: center
+                margin: auto
+                
+                img
+                    height: 20em
+                    padding-block: 2em
+                    padding-inline: 1%
+
+        .numbers
+            width: 65em
+            text-align: center
+            margin: auto
+            flex-direction: row
+            margin-bottom: 4em
+
+            picture
+                justify-content: center
+                margin: auto
             
