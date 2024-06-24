@@ -12,6 +12,13 @@ let swiperFood = new Swiper('.swiper3', {
     }
 });
 
+let swiperFoodDesktop = new Swiper('.swiper5', {
+    navigation: {
+        nextEl: '.swiper-button-next5',
+        prevEl: '.swiper-button-prev5',
+    }
+});
+
 let slider = new Swiper('.swiper2', {
     pagination: {
         el: '.swiper-pagination2',

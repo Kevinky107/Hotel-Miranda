@@ -224,5 +224,55 @@
     button
         margin-top: 2em
 
+    .show
+        display: none
+
     .videoWrapper
         margin-top: 1.5em
+
+
+@media only screen and (min-width: 1000px)
+
+    .card--black
+        display: inline-flex
+        width: 100%
+        height: 26em
+        justify-content: center
+        gap: 5em
+        position: relative
+        
+        .card__info
+            text-align: left
+            max-width: 30em
+            position: relative
+        
+        .hide
+            display: none
+
+        .show
+            display: block
+
+        button
+            position: absolute
+            bottom: 4em
+            margin: auto
+
+        .videoWrapper
+            margin: 0
+            display: block
+            width: 25%
+            height: 16.9em
+            padding-top: 4em
+            z-index: 1
+
+            iframe
+                margin: 0
+                position: static
+
+        &__decoration
+            position: absolute
+            width: 30%
+            height: 100%
+            background-color: $mainColor
+            right: 0
+            top: 0

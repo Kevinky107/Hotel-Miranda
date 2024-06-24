@@ -51,6 +51,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -77,6 +96,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -111,8 +134,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -121,23 +143,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -398,10 +466,59 @@ input[type=submit] {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 .picker {
   display: flexbox;
   justify-items: center;
@@ -521,6 +638,49 @@ input[type=submit] {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .picker .swiper {
+    height: fit-content;
+  }
+  .picker .swiper .slide-image {
+    width: 35em;
+    height: 22em;
+    margin-top: 2em;
+    padding-bottom: 10em;
+  }
+  .picker .swiper .slide-info {
+    top: 21em;
+    width: 28em;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 1em;
+    gap: 2.5em;
+  }
+  .picker .swiper .slide-info div h5 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .picker .swiper .swiper-button-next {
+    right: 30%;
+    top: var(--swiper-navigation-top-offset, 40%);
+    width: 3em;
+    height: 3em;
+  }
+  .picker .swiper .swiper-button-prev {
+    left: 30%;
+    top: var(--swiper-navigation-top-offset, 40%);
+    width: 3em;
+    height: 3em;
+  }
+  .picker .swiper .swiper-button-prev::after {
+    font-size: 1em;
+  }
+  .picker .swiper .swiper-button-next::after {
+    font-size: 1em;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -861,7 +1021,6 @@ footer .footer p {
   right: 0;
   left: 0;
   top: 0;
-  padding-left: 7em;
   padding-top: 4em;
 }
 .home .about-us__teamInfo h3 {
@@ -923,10 +1082,16 @@ footer .footer p {
 .home .picker {
   padding-bottom: 2em;
 }
+.home .facilities__grid {
+  display: none;
+}
 .home .menu {
   padding: 1.5em;
   overflow: hidden;
   position: relative;
+}
+.home .menu__buffet {
+  display: none;
 }
 .home .menu__donut {
   width: 10em;
@@ -1003,6 +1168,9 @@ footer .footer p {
   line-height: 1.2rem;
   font-weight: 400;
 }
+.home .menu__slider--desktop {
+  display: none;
+}
 .home .menu .slider {
   margin-top: 3em;
   padding-bottom: 2em;
@@ -1036,6 +1204,260 @@ footer .footer p {
   color: rgb(119, 119, 119);
 }
 
+@media only screen and (min-width: 1000px) {
+  .home section {
+    overflow: hidden;
+  }
+  .home .availability {
+    width: 100%;
+  }
+  .home .availability__form {
+    margin: 0;
+    padding: 0;
+    padding-block: 2em;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    width: 100%;
+  }
+  .home .availability__form div {
+    width: 20%;
+  }
+  .home .availability__form input[type=submit] {
+    margin: 0;
+    margin-left: 5%;
+  }
+  .home .about-us {
+    display: inline-flex;
+    position: relative;
+    padding-block: 4em;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+  .home .about-us .card {
+    width: 50%;
+    max-width: 20em;
+    order: 3;
+    padding: 0;
+    margin-left: 2em;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .home .about-us__teamInfo {
+    order: 1;
+    margin: 1em;
+    width: 25%;
+    flex-direction: column-reverse;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  .home .about-us__roomInfo {
+    order: 2;
+    margin: 0;
+    width: 25%;
+    padding: 0;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  .home .about-us__roomInfo div {
+    margin-top: 1em;
+    background-color: rgb(34, 34, 34);
+  }
+  .home .about-us__roomInfo h4 {
+    padding-bottom: 4.7em;
+  }
+  .home .about-us .group-img, .home .about-us .room-img {
+    height: 18em;
+    margin: 0;
+  }
+  .home .about-us .group-img {
+    padding-top: 3em;
+  }
+  .home .about-us .room-img {
+    background-color: white;
+    margin-top: 2em;
+  }
+  .home .about-us__decoration {
+    position: absolute;
+    height: 32em;
+    width: 50%;
+    background-color: rgb(249, 249, 249);
+    right: 0;
+    bottom: 1em;
+    z-index: -1;
+  }
+  .home .picker {
+    padding-block: 2em;
+    padding-top: 5em;
+  }
+  .home .facilities {
+    padding-block: 5em;
+  }
+  .home .facilities .slider {
+    display: none;
+  }
+  .home .facilities__grid {
+    display: flex;
+    width: 60em;
+    height: fit-content;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .home .facilities__grid__card {
+    margin: 1.5em;
+    text-align: left;
+    position: relative;
+    width: 17em;
+  }
+  .home .facilities__grid__card h2 {
+    position: absolute;
+    color: rgb(249, 249, 249);
+    top: 0.1em;
+    right: 0.3em;
+    font-family: "Archivo";
+    font-size: 7em;
+  }
+  .home .facilities__grid__card img {
+    padding-top: 4em;
+  }
+  .home .facilities__grid__card h3 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding-block: 0.8em;
+  }
+  .home .facilities__grid__card p {
+    color: rgb(34, 34, 34);
+    font-family: "Archivo";
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 2em;
+  }
+  .home .menu__donut {
+    right: auto !important;
+    left: 4em;
+  }
+  .home .menu__title {
+    text-align: center;
+    padding-right: 14.2em;
+    margin-bottom: -1em;
+  }
+  .home .menu__subtitle {
+    text-align: center;
+    padding-right: 75em;
+    margin-bottom: -1em;
+  }
+  .home .menu__slider {
+    display: none;
+  }
+  .home .menu__slider--desktop {
+    display: block;
+  }
+  .home .menu__slider--desktop .swiper {
+    height: fit-content;
+    width: 65em;
+    padding-top: 5em;
+    text-align: center;
+    margin: auto;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-next {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(190, 173, 142);
+    color: white;
+    top: 2em;
+    right: 2.4em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-next::after {
+    font-size: 0.5em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-prev {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(190, 173, 142);
+    color: white;
+    top: 2em;
+    left: auto !important;
+    right: 6em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-prev::after {
+    font-size: 0.5em;
+  }
+  .home .menu__slider--desktop .swiper .swiper-button-disabled {
+    color: black;
+    background-color: rgb(249, 249, 249);
+    opacity: 1;
+  }
+  .home .menu__slider--desktop .swiper .slide {
+    text-align: center;
+  }
+  .home .menu__slider--desktop .swiper .slide picture {
+    margin-block: 1em;
+    margin-right: 2em;
+    display: inline-flex;
+    align-items: center;
+    width: 30em;
+    text-align: left;
+  }
+  .home .menu__slider--desktop .swiper .slide picture img {
+    height: 6em;
+    width: 6em;
+    padding-right: 2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture h4 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding-bottom: 0.2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture p {
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+  }
+  .home .menu__slider--desktop .swiper .slide picture .arrow {
+    filter: brightness(500%);
+    height: 2em;
+  }
+  .home .menu__slider--desktop .swiper .slide picture:hover {
+    background-color: rgb(34, 34, 34);
+    color: white;
+  }
+  .home .menu__slider--desktop .swiper .slide picture:hover .arrow {
+    filter: brightness(100%);
+  }
+  .home .menu .slider {
+    display: none;
+  }
+  .home .menu__buffet {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .home .menu__buffet img {
+    height: 20em;
+    padding-block: 2em;
+    padding-inline: 1%;
+  }
+  .home .numbers {
+    width: 65em;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 4em;
+  }
+  .home .numbers picture {
+    justify-content: center;
+    margin: auto;
+  }
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -1089,6 +1511,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -1115,6 +1556,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -1149,8 +1594,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -1159,23 +1603,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -1436,10 +1926,59 @@ input[type=submit] {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -1826,6 +2365,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -1852,6 +2410,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -1886,8 +2448,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -1896,23 +2457,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -2180,6 +2787,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -2206,6 +2832,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -2240,8 +2870,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -2250,23 +2879,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -2527,10 +3202,59 @@ input[type=submit] {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -2874,6 +3598,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -2900,6 +3643,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -2934,8 +3681,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -2944,23 +3690,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 .card {
   padding: 1.5em;
   padding-block: 5em;
@@ -3221,10 +4013,59 @@ input[type=submit] {
 .card--black button {
   margin-top: 2em;
 }
+.card--black .show {
+  display: none;
+}
 .card--black .videoWrapper {
   margin-top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card--black {
+    display: inline-flex;
+    width: 100%;
+    height: 26em;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+  }
+  .card--black .card__info {
+    text-align: left;
+    max-width: 30em;
+    position: relative;
+  }
+  .card--black .hide {
+    display: none;
+  }
+  .card--black .show {
+    display: block;
+  }
+  .card--black button {
+    position: absolute;
+    bottom: 4em;
+    margin: auto;
+  }
+  .card--black .videoWrapper {
+    margin: 0;
+    display: block;
+    width: 25%;
+    height: 16.9em;
+    padding-top: 4em;
+    z-index: 1;
+  }
+  .card--black .videoWrapper iframe {
+    margin: 0;
+    position: static;
+  }
+  .card--black__decoration {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(190, 173, 142);
+    right: 0;
+    top: 0;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -3505,6 +4346,25 @@ header .return p span {
   word-spacing: 0.1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-top: 7em;
+    padding-inline: 20%;
+  }
+  header h1 {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 6rem;
+  }
+  header div {
+    display: inline-flex;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  header div button, header div button:last-of-type {
+    margin: 0;
+  }
+}
 button {
   background-color: rgb(190, 173, 142);
   color: white;
@@ -3531,6 +4391,10 @@ input[type=submit] {
   display: block;
   width: 20em;
   height: 4em;
+}
+
+nav {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar {
@@ -3565,8 +4429,7 @@ input[type=submit] {
   padding-inline: 1em;
   gap: 1.5em;
 }
-
-.nav-links {
+.navbar .nav-links {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -3575,23 +4438,69 @@ input[type=submit] {
   padding: 1em;
   z-index: 4;
 }
-.nav-links ul {
+.navbar .nav-links ul {
   list-style: none;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 600;
 }
-.nav-links ul li {
+.navbar .nav-links ul li {
   padding-block: 0.5em;
 }
-.nav-links ul li a {
+.navbar .nav-links ul li a {
   text-decoration: none;
   color: black;
 }
-.nav-links--hide {
+.navbar .nav-links--hide {
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    padding-top: 0.5em;
+  }
+  .navbar {
+    margin-top: 1em;
+    margin-bottom: -2em;
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin-inline: auto;
+    padding-inline: 1em;
+  }
+  .navbar__left__menu {
+    display: none;
+  }
+  .navbar__right img {
+    padding: 0.3em;
+    border: solid 2px rgb(249, 249, 249);
+  }
+  .navbar .nav-links, .navbar .nav-links--hide {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 1.5em;
+    left: 15em;
+    margin: auto;
+    z-index: 5;
+    list-style: none;
+    font-family: "Archivo";
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav-links li, .navbar .nav-links--hide li {
+    padding-block: 0.5em;
+    display: inline-flex;
+    padding-right: 2em;
+  }
+  .navbar .nav-links li a, .navbar .nav-links--hide li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar img:hover {
+    cursor: pointer;
+  }
+}
 footer .footer-info {
   overflow: hidden;
   position: relative;
@@ -3797,6 +4706,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  button:hover {
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    cursor: pointer;
+  }
+  .booking:hover {
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -102,7 +102,6 @@
                     right: 0
                     left: 0
                     top: 0
-                    padding-left: 7em
                     padding-top: 4em
 
             h3
@@ -151,10 +150,17 @@
     .picker
         padding-bottom: 2em
 
+    .facilities
+        &__grid
+            display: none
+
     .menu
         padding: 1.5em
         overflow: hidden
         position: relative
+
+        &__buffet
+            display: none
 
         &__donut
             width: 10em
@@ -226,6 +232,9 @@
                         line-height: 1.2rem
                         font-weight: 400
 
+            &--desktop
+                display: none
+
         .slider
             margin-top: 3em
             padding-bottom: 2em
@@ -259,5 +268,251 @@
                 color: $grayText
 
 
+@media only screen and (min-width: 1000px)
 
+    .home
+        section
+            overflow: hidden
+        .availability
+            width: 100%
+            &__form
+                margin: 0
+                padding: 0
+                padding-block: 2em
+                display: inline-flex
+                flex-direction: row
+                justify-content: center
+                width: auto
+                align-items: center
+                width: 100%
 
+                div
+                    width: 20%
+
+                input[type="submit"]
+                    margin: 0
+                    margin-left: 5%
+
+        .about-us
+            display: inline-flex
+            position: relative
+            padding-block: 4em
+            justify-content: center
+            width: 100%
+            margin: auto
+            align-items: center
+            
+            .card
+                width: 50%
+                max-width: 20em
+                order: 3
+                padding: 0
+                margin-left: 2em
+                background-color: rgb(0,0,0,0)
+
+            &__teamInfo
+                order: 1
+                margin: 1em
+                width: 25%
+                flex-direction: column-reverse
+                background-color: rgba(255, 255, 255, 0)
+                box-shadow: none             
+
+            &__roomInfo
+                order: 2
+                margin: 0
+                width: 25%
+                padding: 0
+                height: fit-content
+                background-color: rgba(255, 255, 255, 0)
+                box-shadow: none
+
+                div
+                    margin-top: 1em
+                    background-color: $black
+
+                h4
+                    padding-bottom: 4.7em
+
+            .group-img, .room-img
+                height: 18em
+                margin: 0
+
+            .group-img
+                padding-top: 3em
+
+            .room-img
+                background-color: white
+                margin-top: 2em
+
+            &__decoration
+                position: absolute
+                height: 32em
+                width: 50%
+                background-color: $lightGray
+                right: 0
+                bottom: 1em
+                z-index: -1
+
+        .picker
+            padding-block: 2em
+            padding-top: 5em
+
+        .facilities
+            padding-block: 5em
+            .slider
+                display: none
+            &__grid
+                display: flex
+                width: 60em
+                height: fit-content
+                flex-wrap: wrap
+                margin: auto
+
+                &__card
+                    margin: 1.5em
+                    text-align: left
+                    position: relative
+                    width: 17em
+                
+                    h2
+                        position: absolute
+                        color: $lightGray
+                        top: 0.1em
+                        right: 0.3em
+                        font-family: "Archivo"
+                        font-size: 7em
+
+                    img
+                        padding-top: 4em
+
+                    h3
+                        font-family: "Old Standard TT"
+                        font-weight: 100
+                        font-size: 1.6rem
+                        padding-block: 0.8em
+
+                    p
+                        @include Text2
+                        padding-bottom: 2em
+
+        .menu
+            &__donut
+                right: auto !important
+                left: 4em
+
+            &__title
+                text-align: center
+                padding-right: 14.2em
+                margin-bottom: -1em
+
+            &__subtitle
+                text-align: center
+                padding-right: 75em
+                margin-bottom: -1em
+
+            &__slider
+                display: none
+
+                &--desktop
+                    display: block
+
+                    .swiper
+                        height: fit-content
+                        width: 65em
+                        padding-top: 5em
+                        text-align: center
+                        margin: auto
+
+                        .swiper-button-next
+                            width: 2.5em
+                            height: 2.5em
+                            background-color: $mainColor
+                            color: white
+                            top: 2em
+                            right: 2.4em
+
+                        .swiper-button-next::after
+                            font-size: 0.5em
+
+                        .swiper-button-prev
+                            width: 2.5em
+                            height: 2.5em
+                            background-color: $mainColor
+                            color: white
+                            top: 2em
+                            left: auto !important
+                            right: 6em
+
+                        .swiper-button-prev::after
+                            font-size: 0.5em
+
+                        .swiper-button-disabled
+                            color: black
+                            background-color: $lightGray
+                            opacity: 1
+
+                        .slide
+                            text-align: center
+
+                            picture
+                                margin-block: 1em
+                                margin-right: 2em
+                                display: inline-flex
+                                align-items: center
+                                width: 30em
+                                text-align: left
+
+                                img
+                                    height: 6em
+                                    width: 6em
+                                    padding-right: 2em
+
+                                h4
+                                    font-family: "Old Standard TT"
+                                    font-weight: 100
+                                    font-size: 1.4rem
+                                    padding-bottom: 0.2em
+
+                                p
+                                    font-family: "Roboto"
+                                    font-size: 0.85rem
+                                    line-height: 1.2rem
+                                    font-weight: 400
+
+                                .arrow
+                                    filter: brightness(500%)
+                                    height: 2em
+
+                            picture:hover
+                                background-color: $black
+                                color: white
+
+                                .arrow
+                                    filter: brightness(100%)
+
+            .slider
+                display: none
+
+            &__buffet
+                width: 100%
+                display: inline-flex
+                justify-content: center
+                margin: auto
+                
+                img
+                    height: 20em
+                    padding-block: 2em
+                    padding-inline: 1%
+
+        .numbers
+            width: 65em
+            text-align: center
+            margin: auto
+            flex-direction: row
+            margin-bottom: 4em
+
+            picture
+                justify-content: center
+                margin: auto
+            
