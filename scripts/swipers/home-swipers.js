@@ -2,7 +2,18 @@ let swiper = new Swiper('.swiper1', {
     navigation: {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1',
-    }
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+    },
+    centeredSlides: true,
+    centeredSlidesBounds: true
+    
 });
 
 let swiperFood = new Swiper('.swiper3', {
