@@ -69,6 +69,9 @@ header .return p span {
   header div button, header div button:last-of-type {
     margin: 0;
   }
+  header .return {
+    right: 20em;
+  }
 }
 button {
   background-color: rgb(190, 173, 142);
@@ -1567,6 +1570,9 @@ header .return p span {
   header div button, header div button:last-of-type {
     margin: 0;
   }
+  header .return {
+    right: 20em;
+  }
 }
 button {
   background-color: rgb(190, 173, 142);
@@ -2380,6 +2386,48 @@ footer .footer p {
   padding-bottom: 2em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-us .presentation {
+    max-width: 60em;
+    text-align: center;
+    margin: auto;
+  }
+  .about-us .restaurant-section {
+    text-align: center;
+    width: 100%;
+    padding: auto;
+    padding-top: 5em;
+  }
+  .about-us .restaurant-section .card--shadow2 {
+    max-width: 60em;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+  .about-us .restaurant-section .card--shadow2 div {
+    text-align: left;
+  }
+  .about-us .restaurant-section .card--shadow2 img {
+    max-width: 30em;
+  }
+  .about-us .facilities--dark .swiper {
+    width: 60%;
+    min-width: 60em;
+  }
+  .about-us .facilities--dark .slide {
+    height: 20em;
+  }
+  .about-us .counter {
+    max-width: 60em;
+    text-align: left;
+    margin: auto;
+  }
+  .about-us .counter .swiper img {
+    height: 20em;
+  }
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -2450,6 +2498,9 @@ header .return p span {
   }
   header div button, header div button:last-of-type {
     margin: 0;
+  }
+  header .return {
+    right: 20em;
   }
 }
 button {
@@ -2831,6 +2882,10 @@ footer .footer p {
   color: rgb(189, 189, 189);
 }
 
+.rooms main {
+  padding-inline: 10em;
+  padding-block: 5em;
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -2901,6 +2956,9 @@ header .return p span {
   }
   header div button, header div button:last-of-type {
     margin: 0;
+  }
+  header .return {
+    right: 20em;
   }
 }
 button {
@@ -3599,6 +3657,8 @@ footer .footer p {
 }
 .room-details .amentities article {
   padding-inline: 1.5em;
+}
+.room-details .amentities article ul {
   list-style: none;
   -moz-column-count: 2;
        column-count: 2;
@@ -3641,7 +3701,7 @@ footer .footer p {
   height: 10em;
   width: 10em;
   border-radius: 10em;
-  background-image: url("public/yo.jpeg");
+  background-image: url("../public/yo.jpeg");
   background-size: 10em;
   margin-bottom: 1em;
 }
@@ -3673,6 +3733,16 @@ footer .footer p {
   padding-top: 1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .room-details main {
+    max-width: 70em;
+    margin: auto;
+  }
+  .room-details main .amentities ul {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -3743,6 +3813,9 @@ header .return p span {
   }
   header div button, header div button:last-of-type {
     margin: 0;
+  }
+  header .return {
+    right: 20em;
   }
 }
 button {
@@ -4451,6 +4524,17 @@ footer .footer p {
   padding-bottom: 0.2em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers .cards {
+    padding-inline: 20%;
+  }
+  .offers .popular {
+    margin-bottom: 5em;
+  }
+  .offers .popular .swiper {
+    width: 70em;
+  }
+}
 header {
   background-color: rgb(51, 51, 51);
   padding: 1.5em;
@@ -4521,6 +4605,9 @@ header .return p span {
   }
   header div button, header div button:last-of-type {
     margin: 0;
+  }
+  header .return {
+    right: 20em;
   }
 }
 button {
@@ -4870,6 +4957,22 @@ footer .footer p {
   top: 1.5em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contact .data {
+    text-align: center;
+    margin: auto;
+  }
+  .contact .data picture {
+    width: 20em;
+    display: inline-flex;
+  }
+  .contact .map {
+    padding-inline: 20%;
+  }
+  .contact .form {
+    padding-inline: 20%;
+  }
+}
 * {
   margin: 0;
   padding: 0;

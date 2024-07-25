@@ -69,6 +69,9 @@ header .return p span {
   header div button, header div button:last-of-type {
     margin: 0;
   }
+  header .return {
+    right: 20em;
+  }
 }
 button {
   background-color: rgb(190, 173, 142);
@@ -298,12 +301,28 @@ footer .footer p {
 }
 
 @media only screen and (min-width: 1000px) {
+  footer {
+    overflow: hidden;
+  }
+  footer .background {
+    width: 100%;
+  }
   footer .footer-info {
+    padding-left: 5%;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
+    gap: 2em;
   }
   footer .footer-info div {
-    max-width: 10em;
+    max-width: 25em;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer .footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 .slider .swiper {
@@ -431,4 +450,9 @@ footer .footer p {
 .room__info p strong {
   padding-left: 1em;
   color: rgb(189, 189, 189);
+}
+
+.rooms main {
+  padding-inline: 10em;
+  padding-block: 5em;
 }/*# sourceMappingURL=rooms.css.map */

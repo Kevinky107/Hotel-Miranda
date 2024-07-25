@@ -69,6 +69,9 @@ header .return p span {
   header div button, header div button:last-of-type {
     margin: 0;
   }
+  header .return {
+    right: 20em;
+  }
 }
 button {
   background-color: rgb(190, 173, 142);
@@ -483,6 +486,7 @@ nav {
     justify-content: center;
     gap: 5em;
     position: relative;
+    overflow: hidden;
   }
   .card--black .card__info {
     text-align: left;
@@ -612,12 +616,28 @@ footer .footer p {
 }
 
 @media only screen and (min-width: 1000px) {
+  footer {
+    overflow: hidden;
+  }
+  footer .background {
+    width: 100%;
+  }
   footer .footer-info {
+    padding-left: 5%;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
+    gap: 2em;
   }
   footer .footer-info div {
-    max-width: 10em;
+    max-width: 25em;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer .footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 .room {
@@ -757,4 +777,16 @@ footer .footer p {
   font-size: 2.5rem;
   padding-top: 0.5em;
   padding-bottom: 0.2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .offers .cards {
+    padding-inline: 20%;
+  }
+  .offers .popular {
+    margin-bottom: 5em;
+  }
+  .offers .popular .swiper {
+    width: 70em;
+  }
 }/*# sourceMappingURL=offers.css.map */
